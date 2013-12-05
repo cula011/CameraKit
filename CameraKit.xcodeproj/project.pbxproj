@@ -21,6 +21,9 @@
 		FD7A2B5B18488E68007ADDA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3D18488E68007ADDA5 /* UIKit.framework */; };
 		FD7A2B6318488E68007ADDA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD7A2B6118488E68007ADDA5 /* InfoPlist.strings */; };
 		FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */; };
+		FD839CAA184C3C1400E1B897 /* DOFCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CA9184C3C1400E1B897 /* DOFCalculator.m */; };
+		FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */; };
+		FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		FD7A2B6018488E68007ADDA5 /* CameraKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraKitTests-Info.plist"; sourceTree = "<group>"; };
 		FD7A2B6218488E68007ADDA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraKitTests.m; sourceTree = "<group>"; };
+		FD839C6C184C079400E1B897 /* libDOFCalculator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDOFCalculator.a; path = "../DOFCalculator/build/Debug-iphoneos/libDOFCalculator.a"; sourceTree = "<group>"; };
+		FD839CA8184C3C1400E1B897 /* DOFCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOFCalculator.h; path = CameraKit/DOFCalculator.h; sourceTree = "<group>"; };
+		FD839CA9184C3C1400E1B897 /* DOFCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOFCalculator.m; path = CameraKit/DOFCalculator.m; sourceTree = "<group>"; };
+		FD839CF1184EC56D00E1B897 /* CameraBrandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBrandTableViewController.h; sourceTree = "<group>"; };
+		FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBrandTableViewController.m; sourceTree = "<group>"; };
+		FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraModelTableViewController.h; path = ../CameraModelTableViewController.h; sourceTree = "<group>"; };
+		FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraModelTableViewController.m; path = ../CameraModelTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				FD7A2B3F18488E68007ADDA5 /* CameraKit */,
+				FD839CA8184C3C1400E1B897 /* DOFCalculator.h */,
+				FD839CA9184C3C1400E1B897 /* DOFCalculator.m */,
 				FD7A2B5E18488E68007ADDA5 /* CameraKitTests */,
 				FD7A2B3818488E68007ADDA5 /* Frameworks */,
 				FD7A2B3718488E68007ADDA5 /* Products */,
@@ -101,6 +113,7 @@
 		FD7A2B3818488E68007ADDA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD839C6C184C079400E1B897 /* libDOFCalculator.a */,
 				FD7A2B3918488E68007ADDA5 /* Foundation.framework */,
 				FD7A2B3B18488E68007ADDA5 /* CoreGraphics.framework */,
 				FD7A2B3D18488E68007ADDA5 /* UIKit.framework */,
@@ -117,6 +130,10 @@
 				FD7A2B4B18488E68007ADDA5 /* Main.storyboard */,
 				FD7A2B4E18488E68007ADDA5 /* ViewController.h */,
 				FD7A2B4F18488E68007ADDA5 /* ViewController.m */,
+				FD839CF1184EC56D00E1B897 /* CameraBrandTableViewController.h */,
+				FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */,
+				FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */,
+				FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */,
 				FD7A2B5118488E68007ADDA5 /* Images.xcassets */,
 				FD7A2B4018488E68007ADDA5 /* Supporting Files */,
 			);
@@ -249,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */,
 				FD7A2B5018488E68007ADDA5 /* ViewController.m in Sources */,
+				FD839CAA184C3C1400E1B897 /* DOFCalculator.m in Sources */,
 				FD7A2B4A18488E68007ADDA5 /* AppDelegate.m in Sources */,
+				FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */,
 				FD7A2B4618488E68007ADDA5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +480,7 @@
 				FD7A2B6A18488E68007ADDA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD7A2B6B18488E68007ADDA5 /* Build configuration list for PBXNativeTarget "CameraKitTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +489,7 @@
 				FD7A2B6D18488E68007ADDA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
