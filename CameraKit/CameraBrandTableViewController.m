@@ -13,6 +13,7 @@
 @interface CameraBrandTableViewController ()
 
 @property (strong, nonatomic) NSArray *cameraType;
+@property (strong, nonatomic) NSMutableArray *brandSearch;
 
 @end
 
@@ -23,6 +24,9 @@
     [super viewDidLoad];
     
     _cameraType = [[NSArray alloc] initWithArray:[[Camera cameraLibrary] allKeys]];
+    
+    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_cameraType count]];
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -43,6 +47,28 @@
     // cell.accessoryType = UITableViewCellAccessoryCheckmark;
 }
 
+//===========
+
+#pragma mark Content Filtering
+-(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    [_brandSearch removeAllObjects];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchText];
+    _brandSearch = [NSMutableArray arrayWithArray:[_cameraType filteredArrayUsingPredicate:predicate]];
+}
+
+#pragma mark - UISearchDisplayController Delegate Methods
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    
+    [self filterContentForSearchText:searchString scope:
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    return YES;
+}
+
+//===========
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -52,7 +78,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_cameraType count];
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        return [_brandSearch count];
+    }
+    else
+    {
+        return [_cameraType count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,7 +97,12 @@
     //if (cell == nil) {
     //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     //}
-    cell.textLabel.text = [_cameraType objectAtIndex:indexPath.row];
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [_brandSearch objectAtIndex:indexPath.row];
+    } else {
+        cell.textLabel.text = [_cameraType objectAtIndex:indexPath.row];
+    }
     
     return cell;
 }
