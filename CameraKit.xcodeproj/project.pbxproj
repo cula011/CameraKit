@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0DD0BB18503079009EF4D0 /* dof_explained.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD0DD0BA18503079009EF4D0 /* dof_explained.gif */; };
+		FD0DD0C9185141E3009EF4D0 /* Aperture.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C4185141E3009EF4D0 /* Aperture.m */; };
+		FD0DD0CA185141E3009EF4D0 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C6185141E3009EF4D0 /* Camera.m */; };
+		FD0DD0CB185141E3009EF4D0 /* DOFCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C8185141E3009EF4D0 /* DOFCalculator.m */; };
 		FD7A2B3A18488E68007ADDA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3918488E68007ADDA5 /* Foundation.framework */; };
 		FD7A2B3C18488E68007ADDA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3B18488E68007ADDA5 /* CoreGraphics.framework */; };
 		FD7A2B3E18488E68007ADDA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3D18488E68007ADDA5 /* UIKit.framework */; };
@@ -21,7 +25,6 @@
 		FD7A2B5B18488E68007ADDA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3D18488E68007ADDA5 /* UIKit.framework */; };
 		FD7A2B6318488E68007ADDA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD7A2B6118488E68007ADDA5 /* InfoPlist.strings */; };
 		FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */; };
-		FD839CAA184C3C1400E1B897 /* DOFCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CA9184C3C1400E1B897 /* DOFCalculator.m */; };
 		FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */; };
 		FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -37,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD0DD0BA18503079009EF4D0 /* dof_explained.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dof_explained.gif; sourceTree = "<group>"; };
+		FD0DD0C3185141E3009EF4D0 /* Aperture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aperture.h; path = CameraKit/Aperture.h; sourceTree = "<group>"; };
+		FD0DD0C4185141E3009EF4D0 /* Aperture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Aperture.m; path = CameraKit/Aperture.m; sourceTree = "<group>"; };
+		FD0DD0C5185141E3009EF4D0 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = CameraKit/Camera.h; sourceTree = "<group>"; };
+		FD0DD0C6185141E3009EF4D0 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Camera.m; path = CameraKit/Camera.m; sourceTree = "<group>"; };
+		FD0DD0C7185141E3009EF4D0 /* DOFCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOFCalculator.h; path = CameraKit/DOFCalculator.h; sourceTree = "<group>"; };
+		FD0DD0C8185141E3009EF4D0 /* DOFCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOFCalculator.m; path = CameraKit/DOFCalculator.m; sourceTree = "<group>"; };
 		FD7A2B3618488E68007ADDA5 /* CameraKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7A2B3918488E68007ADDA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FD7A2B3B18488E68007ADDA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +67,6 @@
 		FD7A2B6218488E68007ADDA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraKitTests.m; sourceTree = "<group>"; };
 		FD839C6C184C079400E1B897 /* libDOFCalculator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDOFCalculator.a; path = "../DOFCalculator/build/Debug-iphoneos/libDOFCalculator.a"; sourceTree = "<group>"; };
-		FD839CA8184C3C1400E1B897 /* DOFCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOFCalculator.h; path = CameraKit/DOFCalculator.h; sourceTree = "<group>"; };
-		FD839CA9184C3C1400E1B897 /* DOFCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOFCalculator.m; path = CameraKit/DOFCalculator.m; sourceTree = "<group>"; };
 		FD839CF1184EC56D00E1B897 /* CameraBrandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBrandTableViewController.h; sourceTree = "<group>"; };
 		FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBrandTableViewController.m; sourceTree = "<group>"; };
 		FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraModelTableViewController.h; path = ../CameraModelTableViewController.h; sourceTree = "<group>"; };
@@ -89,12 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0DD0BC185030A3009EF4D0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DD0BA18503079009EF4D0 /* dof_explained.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FD7A2B2D18488E68007ADDA5 = {
 			isa = PBXGroup;
 			children = (
 				FD7A2B3F18488E68007ADDA5 /* CameraKit */,
-				FD839CA8184C3C1400E1B897 /* DOFCalculator.h */,
-				FD839CA9184C3C1400E1B897 /* DOFCalculator.m */,
+				FD0DD0C3185141E3009EF4D0 /* Aperture.h */,
+				FD0DD0C4185141E3009EF4D0 /* Aperture.m */,
+				FD0DD0C5185141E3009EF4D0 /* Camera.h */,
+				FD0DD0C6185141E3009EF4D0 /* Camera.m */,
+				FD0DD0C7185141E3009EF4D0 /* DOFCalculator.h */,
+				FD0DD0C8185141E3009EF4D0 /* DOFCalculator.m */,
 				FD7A2B5E18488E68007ADDA5 /* CameraKitTests */,
 				FD7A2B3818488E68007ADDA5 /* Frameworks */,
 				FD7A2B3718488E68007ADDA5 /* Products */,
@@ -143,6 +163,7 @@
 		FD7A2B4018488E68007ADDA5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD0DD0BC185030A3009EF4D0 /* Images */,
 				FD7A2B4118488E68007ADDA5 /* CameraKit-Info.plist */,
 				FD7A2B4218488E68007ADDA5 /* InfoPlist.strings */,
 				FD7A2B4518488E68007ADDA5 /* main.m */,
@@ -248,6 +269,7 @@
 				FD7A2B5218488E68007ADDA5 /* Images.xcassets in Resources */,
 				FD7A2B4418488E68007ADDA5 /* InfoPlist.strings in Resources */,
 				FD7A2B4D18488E68007ADDA5 /* Main.storyboard in Resources */,
+				FD0DD0BB18503079009EF4D0 /* dof_explained.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0DD0CA185141E3009EF4D0 /* Camera.m in Sources */,
 				FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */,
+				FD0DD0C9185141E3009EF4D0 /* Aperture.m in Sources */,
 				FD7A2B5018488E68007ADDA5 /* ViewController.m in Sources */,
-				FD839CAA184C3C1400E1B897 /* DOFCalculator.m in Sources */,
 				FD7A2B4A18488E68007ADDA5 /* AppDelegate.m in Sources */,
+				FD0DD0CB185141E3009EF4D0 /* DOFCalculator.m in Sources */,
 				FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */,
 				FD7A2B4618488E68007ADDA5 /* main.m in Sources */,
 			);

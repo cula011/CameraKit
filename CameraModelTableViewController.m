@@ -8,11 +8,12 @@
 
 #import "CameraModelTableViewController.h"
 #import "ViewController.h"
+#import "Camera.h"
 
 @interface CameraModelTableViewController ()
 
-@property (strong, nonatomic) NSArray *models;
-@property (strong, nonatomic) NSNumber *cocValue;
+@property (strong, nonatomic) NSMutableArray *models;
+//@property (strong, nonatomic) NSNumber *cocValue;
 
 @end
 
@@ -25,7 +26,13 @@
     [super viewDidLoad];
     
     // TODO: The model set should be derived from the incoming camera branc.
-    _models = [NSArray arrayWithObjects:@"700D", @"70D", @"7D", @"6D", @"5D Mark III", @"1D", nil];
+    //_models = [NSArray arrayWithObjects:@"700D", @"70D", @"7D", @"6D", @"5D Mark III", @"1D", nil];
+    
+    _models = [[NSMutableArray alloc] init];
+    for (Camera *camera in [[Camera cameraLibrary] objectForKey:brandName])
+    {
+        [_models addObject:[NSString stringWithFormat:@"%@", camera]];
+    }
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -50,7 +57,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
@@ -65,9 +71,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    //if (cell == nil) {
+    //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    //}
     cell.textLabel.text = [_models objectAtIndex:indexPath.row];
     
     return cell;
@@ -81,9 +87,12 @@
     // TODO: Retrieve the camera brand and model name, so that it can be dispayed on the main screen for the user's reference.
     // TODO: Retrieve the CoC value for the selected camera, so that can be passed back to main controller for calculation.
     
-    if ([segue.identifier isEqualToString:@"showMainScene"]) {
+    if ([segue.identifier isEqualToString:@"showMainScene"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         ViewController *destViewController = segue.destinationViewController;
-        destViewController.cocValue = _cocValue;
+        destViewController.cocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
+        destViewController.selectedCamera = [_models objectAtIndex:indexPath.row];
     }
 }
 

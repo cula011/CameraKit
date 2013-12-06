@@ -8,6 +8,7 @@
 
 #import "CameraBrandTableViewController.h"
 #import "CameraModelTableViewController.h"
+#import "Camera.h"
 
 @interface CameraBrandTableViewController ()
 
@@ -21,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    _cameraType = [NSArray arrayWithObjects:@"Canon", @"Nikon", @"Sony", @"Olympus", @"Panasonic", @"Fuji", nil];
+    _cameraType = [[NSArray alloc] initWithArray:[[Camera cameraLibrary] allKeys]];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -59,11 +60,10 @@
     static NSString *CellIdentifier = @"CameraBrandCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    
     // Configure the cell...
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    //if (cell == nil) {
+    //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    //}
     cell.textLabel.text = [_cameraType objectAtIndex:indexPath.row];
     
     return cell;

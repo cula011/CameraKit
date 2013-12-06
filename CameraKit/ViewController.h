@@ -10,17 +10,16 @@
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+@property (strong, nonatomic) IBOutlet UILabel *camera;
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
-@property (strong, nonatomic) IBOutlet UITextField *distanceToSubject;
+@property (strong, nonatomic) NSString *selectedCamera;
+@property (strong, nonatomic) NSNumber *cocValue;
 
 @property (strong, nonatomic) IBOutlet UILabel *totalDepthOfField;
 @property (strong, nonatomic) IBOutlet UILabel *nearDistance;
 @property (strong, nonatomic) IBOutlet UILabel *farDistance;
 
-@property (strong, nonatomic) NSNumber *cocValue;
-
 - (IBAction)calculate:(id)sender;
-- (IBAction)swipeDownToCloseKeyboard:(UISwipeGestureRecognizer *)sender;
 
 @end

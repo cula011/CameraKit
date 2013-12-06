@@ -10,33 +10,12 @@
 
 @interface DOFCalculator : NSObject
 
--(NSArray *)imageFormat;
--(NSArray *)fNumber;
-
-//typedef NS_ENUM(NSInteger, ImageFormat) {
-//    Full_Frame
-//};
-//
-//// aperture value to f-number mapping
-//// http://en.wikipedia.org/wiki/F-number#Standard_full-stop_f-number_scale
-//typedef NS_ENUM(NSInteger, FNumber) {
-//    One_Point_Four = 1,
-//    Two,
-//    Two_Point_Eight,
-//    Four,
-//    Five_Point_Six,
-//    Eight,
-//    Eleven,
-//    Sixteen,
-//    TwentyTwo
-//};
-
 // assuming the focal length is provided in millimeters, return the hyperfocal distance in meters
--(double)hyperfocalDistanceForFocalLength:(double)fl fNumber:(NSString*)f imageFormat: (NSString*) imageFormat;
+-(double)hyperfocalDistanceForFocalLength:(double)fl aperture:(NSNumber*)f circleOfConfusion: (NSNumber*)coc;
 
--(double)nearDistanceForFocusDistance:(double)fs hyperfocalDistance:(double)hd focalLength:(double)fl;
+-(double)nearDistanceFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd;
 
--(double)farDistanceForFocusDistance:(double)fs hyperfocalDistance:(double)hd focalLength:(double)fl;
+-(double)farDistanceForFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd;
 
 -(double)distanceInFrontOfSubjectForFocusDistance:(double)focus nearDistance:(double)near;
 

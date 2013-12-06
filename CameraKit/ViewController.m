@@ -7,21 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "Aperture.h"
 #import "DOFCalculator.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) NSArray *focalLength, *fNumber, *imageFormat;
-
 @property (strong, nonatomic) DOFCalculator *dofCalc;
+
+@property (strong, nonatomic) NSArray *focalLength, *distanceToSubject;
+@property (strong, nonatomic) NSMutableArray *aperture;
 
 @end
 
 @implementation ViewController
 
+@synthesize selectedCamera;
 @synthesize cocValue;
-
-//@synthesize totalDepthOfField, nearDistance, farDistance, distanceToSubject;
+@synthesize camera, totalDepthOfField, nearDistance, farDistance;
 
 - (void)viewDidLoad
 {
@@ -29,47 +31,23 @@
     
     _dofCalc = [[DOFCalculator alloc] init];
     
-    NSArray *focalLengthData = [[NSArray alloc] initWithObjects:@"50", nil];
-    _focalLength = focalLengthData;
-    
-    _fNumber = [_dofCalc fNumber];
-    
-    _imageFormat = [_dofCalc imageFormat];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)calculate:(id)sender
-{
-    NSString *selectImageFormat = [_imageFormat objectAtIndex:[_picker selectedRowInComponent:2]];
-    NSString *selectFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
-    NSString *selectFNumber = [_fNumber objectAtIndex:[_picker selectedRowInComponent:1]];
-    
-    // TODO: deal with whitespace and non numerical entries
-    if ([_distanceToSubject.text length] == 0)
+    if (selectedCamera != nil)
     {
-        UIAlertView *errAlert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"You must provide a value for the 'Distance to Subject'" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [errAlert show];
+        camera.text = selectedCamera;
     }
-    double dist = [_distanceToSubject.text doubleValue];
     
-    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectFocalLength doubleValue] fNumber:selectFNumber imageFormat:selectImageFormat];
-    double nd = [_dofCalc nearDistanceForFocusDistance:dist hyperfocalDistance:hfd focalLength:[selectFocalLength doubleValue]];
-    double fd = [_dofCalc farDistanceForFocusDistance:dist hyperfocalDistance:hfd focalLength:[selectFocalLength doubleValue]];
-    double tdof = [_dofCalc totalDepthOfFieldForFarDistance:fd nearDistance:nd];
-
-    _totalDepthOfField.text = [NSString stringWithFormat:@"%5.2f m", tdof];
-    _nearDistance.text = [NSString stringWithFormat:@"%5.2f m", nd];
-    _farDistance.text = [NSString stringWithFormat:@"%5.2f m", fd];
+    _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
     
-    if(_distanceToSubject)
+    _aperture = [[NSMutableArray alloc]init];
+    for (Aperture *aperture in [Aperture apertureLibrary])
     {
-        [_distanceToSubject resignFirstResponder];
+        [_aperture addObject:[aperture fNumber]];
     }
+    
+    _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
+    
+    // TODO: Look at defaulting picker selections on load, and retaining across transitions.
+    // TODO: Remember the camera selection across application lifecycle.
 }
 
 // hide the navigation bar, so it does not appear on the root page
@@ -84,34 +62,29 @@
     [super viewWillDisappear:animated];
 }
 
-#pragma mark UI Interactions
-
-// close the keyboard when the 'Done' button is pressed
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return NO;
-}
-
-// close the keyboard when the swipe down gesture is executed
-- (IBAction)swipeDownToCloseKeyboard:(UISwipeGestureRecognizer *)sender
+- (void)didReceiveMemoryWarning
 {
-    if(_distanceToSubject)
-    {
-        [_distanceToSubject resignFirstResponder];
-    }
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-// close the keyboard when the background view is tapped
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (IBAction)calculate:(id)sender
+{
+    // TODO: Add a check to ensure that a camera has been selected and we have value for coc.
     
-    UITouch *touch = [[event allTouches] anyObject];
-    if ([_distanceToSubject isFirstResponder] && [touch view] != _distanceToSubject) {
-        [_distanceToSubject resignFirstResponder];
-    }
-    [super touchesBegan:touches withEvent:event];
+    NSString *selectFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
+    NSString *selectFNumber = [_aperture objectAtIndex:[_picker selectedRowInComponent:1]];
+    NSString *selectDistance = [_distanceToSubject objectAtIndex:[_picker selectedRowInComponent:2]];
+    
+    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectFocalLength doubleValue] aperture:[NSNumber numberWithDouble:[selectFNumber doubleValue]] circleOfConfusion:cocValue];
+    double nd = [_dofCalc nearDistanceFocalLength:[selectFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectDistance doubleValue]];
+    double fd = [_dofCalc farDistanceForFocalLength:[selectFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectDistance doubleValue]];
+    double tdof = [_dofCalc totalDepthOfFieldForFarDistance:fd nearDistance:nd];
+
+    totalDepthOfField.text = [NSString stringWithFormat:@"%5.2f m", tdof];
+    nearDistance.text = [NSString stringWithFormat:@"%5.2f m", nd];
+    farDistance.text = [NSString stringWithFormat:@"%5.2f m", fd];
 }
-
-
 
 #pragma mark Picker Data Source Methods
 
@@ -127,9 +100,9 @@
     case 0:
         return [_focalLength count];
     case 1:
-        return [_fNumber count];
+        return [_aperture count];
     case 2:
-        return [_imageFormat count];
+        return [_distanceToSubject count];
     default:
         return 0;
     }
@@ -144,9 +117,9 @@
         case 0:
             return [NSString stringWithFormat:@"%@ mm", [_focalLength objectAtIndex:row]];
         case 1:
-            return [_fNumber objectAtIndex:row];
+            return [NSString stringWithFormat:@"f/%@", [_aperture objectAtIndex:row]];
         case 2:
-            return [_imageFormat objectAtIndex:row];
+            return [NSString stringWithFormat:@"%@ m", [_distanceToSubject objectAtIndex:row]];
         default:
             return 0;
     }
