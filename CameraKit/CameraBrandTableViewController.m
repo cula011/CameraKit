@@ -28,6 +28,11 @@
     _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_cameraType count]];
     
 
+    // Hide the search bar until user scrolls up
+    CGRect newBounds = self.tableView.bounds;
+    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
+    self.tableView.bounds = newBounds;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -47,14 +52,12 @@
     // cell.accessoryType = UITableViewCellAccessoryCheckmark;
 }
 
-//===========
-
 #pragma mark Content Filtering
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     [_brandSearch removeAllObjects];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", searchText];
     _brandSearch = [NSMutableArray arrayWithArray:[_cameraType filteredArrayUsingPredicate:predicate]];
 }
 
@@ -66,8 +69,6 @@
     
     return YES;
 }
-
-//===========
 
 #pragma mark - Table view data source
 
@@ -91,12 +92,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CameraBrandCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    //if (cell == nil) {
-    //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    //}
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath]; // TODO: Why did using 'self.tableView' instead of tableView fix everything?!
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [_brandSearch objectAtIndex:indexPath.row];
@@ -112,15 +108,17 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    if ([segue.identifier isEqualToString:@"showCameraModel"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        CameraModelTableViewController *destViewController = segue.destinationViewController;
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    CameraModelTableViewController *destViewController = [segue destinationViewController];
+    if (self.searchDisplayController.active)
+    {
+        destViewController.brandName = [_brandSearch objectAtIndex:indexPath.row];
+    }
+    else
+    {
         destViewController.brandName = [_cameraType objectAtIndex:indexPath.row];
     }
-    
+    //if ([segue.identifier isEqualToString:@"showCameraModel"]) {
 }
 
 @end
