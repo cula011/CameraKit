@@ -31,7 +31,7 @@
     
     _dofCalc = [[DOFCalculator alloc] init];
     
-    if (selectedCamera != nil)
+    if ([self selectedCamera] != nil)
     {
         camera.text = selectedCamera;
     }
@@ -48,7 +48,18 @@
     
     // TODO: Look at defaulting picker selections on load, and retaining across transitions.
     // TODO: Remember the camera selection across application lifecycle.
+
+    // NASTY_STEP1 [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
 }
+
+/* NASTY_STEP2
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+*/
 
 // hide the navigation bar, so it does not appear on the root page
 - (void)viewWillAppear:(BOOL)animated
@@ -61,6 +72,12 @@
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
 }
+
+// THIS: could be done in the navigation controller delegate depending on the current view controller
+//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+//{
+//    [navigationController setNavigationBarHidden:YES animated:animated];
+//}
 
 - (void)didReceiveMemoryWarning
 {

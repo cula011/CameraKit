@@ -12,7 +12,7 @@
 
 @interface CameraBrandTableViewController ()
 
-@property (strong, nonatomic) NSArray *cameraType;
+@property (strong, nonatomic) NSArray *brands;
 @property (strong, nonatomic) NSMutableArray *brandSearch;
 
 @end
@@ -23,9 +23,9 @@
 {
     [super viewDidLoad];
     
-    _cameraType = [[NSArray alloc] initWithArray:[[Camera cameraLibrary] allKeys]];
+    _brands = [[NSArray alloc] initWithArray:[[Camera cameraLibrary] allKeys]];
     
-    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_cameraType count]];
+    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_brands count]];
     
 
     // Hide the search bar until user scrolls up
@@ -58,7 +58,7 @@
     [_brandSearch removeAllObjects];
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", searchText];
-    _brandSearch = [NSMutableArray arrayWithArray:[_cameraType filteredArrayUsingPredicate:predicate]];
+    _brandSearch = [NSMutableArray arrayWithArray:[_brands filteredArrayUsingPredicate:predicate]];
 }
 
 #pragma mark - UISearchDisplayController Delegate Methods
@@ -85,7 +85,7 @@
     }
     else
     {
-        return [_cameraType count];
+        return [_brands count];
     }
 }
 
@@ -94,10 +94,12 @@
     static NSString *CellIdentifier = @"CameraBrandCell";
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath]; // TODO: Why did using 'self.tableView' instead of tableView fix everything?!
     
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
         cell.textLabel.text = [_brandSearch objectAtIndex:indexPath.row];
-    } else {
-        cell.textLabel.text = [_cameraType objectAtIndex:indexPath.row];
+    } else
+    {
+        cell.textLabel.text = [_brands objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -116,7 +118,7 @@
     }
     else
     {
-        destViewController.brandName = [_cameraType objectAtIndex:indexPath.row];
+        destViewController.brandName = [_brands objectAtIndex:indexPath.row];
     }
     //if ([segue.identifier isEqualToString:@"showCameraModel"]) {
 }
