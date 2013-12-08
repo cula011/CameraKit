@@ -33,7 +33,7 @@
     
     if ([self selectedCamera] != nil)
     {
-        camera.text = selectedCamera;
+        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", selectedCamera, cocValue];
     }
     
     _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];

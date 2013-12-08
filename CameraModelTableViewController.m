@@ -118,8 +118,9 @@
     ViewController *destViewController = [segue destinationViewController];
     if (self.searchDisplayController.active)
     {
-        // TODO: Fix misalignment in array index values.
-        destViewController.cocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
+        // get the location in the original array, so that we can correctly match to the original data source
+        NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
+        destViewController.cocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
         destViewController.selectedCamera = [_modelSearch objectAtIndex:indexPath.row];
     }
     else
