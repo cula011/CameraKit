@@ -15,7 +15,7 @@
 @property (strong, nonatomic) DOFCalculator *dofCalc;
 
 @property (strong, nonatomic) NSArray *focalLength, *distanceToSubject;
-@property (strong, nonatomic) NSMutableArray *aperture;
+@property (strong, nonatomic) NSMutableArray *fNumber;
 
 @end
 
@@ -23,7 +23,7 @@
 
 @synthesize selectedCamera;
 @synthesize cocValue;
-@synthesize camera, totalDepthOfField, nearDistance, farDistance;
+@synthesize camera, nearDistance, farDistance, totalDepthOfField, hyperfocalDistance;
 
 - (void)viewDidLoad
 {
@@ -38,10 +38,10 @@
     
     _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
     
-    _aperture = [[NSMutableArray alloc]init];
+    _fNumber = [[NSMutableArray alloc]init];
     for (Aperture *aperture in [Aperture apertureLibrary])
     {
-        [_aperture addObject:[aperture fNumber]];
+        [_fNumber addObject:[aperture fNumber]];
     }
     
     _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
@@ -89,18 +89,28 @@
 {
     // TODO: Add a check to ensure that a camera has been selected and we have value for coc.
     
-    NSString *selectFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
-    NSString *selectFNumber = [_aperture objectAtIndex:[_picker selectedRowInComponent:1]];
-    NSString *selectDistance = [_distanceToSubject objectAtIndex:[_picker selectedRowInComponent:2]];
+    NSString *selectedFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
+    Aperture *selectedFNumber = [[Aperture apertureLibrary] objectAtIndex:[_picker selectedRowInComponent:1]];
+    int selectedApertureValue = [selectedFNumber apertureValue];
+    NSString *selectedDistance = [_distanceToSubject objectAtIndex:[_picker selectedRowInComponent:2]];
     
-    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectFocalLength doubleValue] aperture:[NSNumber numberWithDouble:[selectFNumber doubleValue]] circleOfConfusion:cocValue];
-    double nd = [_dofCalc nearDistanceFocalLength:[selectFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectDistance doubleValue]];
-    double fd = [_dofCalc farDistanceForFocalLength:[selectFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectDistance doubleValue]];
+    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectedFocalLength doubleValue] aperture:[NSNumber numberWithInt:selectedApertureValue] circleOfConfusion:cocValue];
+    double nd = [_dofCalc nearDistanceFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue]];
+    double fd = [_dofCalc farDistanceForFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue]];
     double tdof = [_dofCalc totalDepthOfFieldForFarDistance:fd nearDistance:nd];
 
-    totalDepthOfField.text = [NSString stringWithFormat:@"%5.2f m", tdof];
     nearDistance.text = [NSString stringWithFormat:@"%5.2f m", nd];
-    farDistance.text = [NSString stringWithFormat:@"%5.2f m", fd];
+    if (fd < 0)
+    {
+        farDistance.text = @"Infinity";
+        totalDepthOfField.text = @"Infinite";
+    }
+    else
+    {
+        farDistance.text = [NSString stringWithFormat:@"%5.2f m", fd];
+        totalDepthOfField.text = [NSString stringWithFormat:@"%5.2f m", tdof];
+    }
+    hyperfocalDistance.text = [NSString stringWithFormat:@"%5.2f m", hfd];
 }
 
 #pragma mark Picker Data Source Methods
@@ -117,7 +127,7 @@
     case 0:
         return [_focalLength count];
     case 1:
-        return [_aperture count];
+        return [_fNumber count];
     case 2:
         return [_distanceToSubject count];
     default:
@@ -134,7 +144,7 @@
         case 0:
             return [NSString stringWithFormat:@"%@ mm", [_focalLength objectAtIndex:row]];
         case 1:
-            return [NSString stringWithFormat:@"f/%@", [_aperture objectAtIndex:row]];
+            return [NSString stringWithFormat:@"f/%@", [_fNumber objectAtIndex:row]];
         case 2:
             return [NSString stringWithFormat:@"%@ m", [_distanceToSubject objectAtIndex:row]];
         default:
