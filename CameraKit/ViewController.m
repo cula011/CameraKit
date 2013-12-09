@@ -74,6 +74,7 @@
     {
         UIAlertView *warning = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please select a camera model." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [warning show];
+        return;
     }
     
     NSString *selectedFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
