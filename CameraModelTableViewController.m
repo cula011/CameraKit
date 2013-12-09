@@ -114,22 +114,33 @@
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //ViewController *destViewController = [segue destinationViewController];
+    
+    NSNumber *selectedCocValue;
+    NSString *selectedCameraModel;
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    ViewController *destViewController = [segue destinationViewController];
+    
+    //if ([segue.identifier isEqualToString:@"showMainScene"]){}
     if (self.searchDisplayController.active)
     {
         // get the location in the original array, so that we can correctly match to the original data source
         NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
-        destViewController.cocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
-        destViewController.selectedCamera = [_modelSearch objectAtIndex:indexPath.row];
+        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
+        selectedCameraModel = [_modelSearch objectAtIndex:indexPath.row];
     }
     else
     {
-        destViewController.cocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
-        destViewController.selectedCamera = [_models objectAtIndex:indexPath.row];
+        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
+        selectedCameraModel = [_models objectAtIndex:indexPath.row];
     }
     
-    //if ([segue.identifier isEqualToString:@"showMainScene"]){}
+    //destViewController.cocValue = selectedCocValue;
+    //destViewController.selectedCamera = selectedCameraModel;
+    
+    //
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:selectedCameraModel forKey:@"selectedCameraModel"];
+    [userDefaults setValue:selectedCocValue forKey:@"cocValue"];
 }
 
 @end

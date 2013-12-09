@@ -10,9 +10,6 @@
 
 @interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (strong, nonatomic) NSString *selectedCamera;
-@property (strong, nonatomic) NSNumber *cocValue;
-
 @property (strong, nonatomic) IBOutlet UILabel *camera;
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 

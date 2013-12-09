@@ -14,6 +14,9 @@
 
 @property (strong, nonatomic) DOFCalculator *dofCalc;
 
+@property (strong, nonatomic) NSString *selectedCameraModel;
+@property (strong, nonatomic) NSNumber *cocValue;
+
 @property (strong, nonatomic) NSArray *focalLength, *distanceToSubject;
 @property (strong, nonatomic) NSMutableArray *fNumber;
 
@@ -21,8 +24,6 @@
 
 @implementation ViewController
 
-@synthesize selectedCamera;
-@synthesize cocValue;
 @synthesize camera, nearDistance, farDistance, totalDepthOfField, hyperfocalDistance;
 
 - (void)viewDidLoad
@@ -31,9 +32,17 @@
     
     _dofCalc = [[DOFCalculator alloc] init];
     
-    if ([self selectedCamera] != nil)
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults stringForKey:@"selectedCameraModel"] != nil &&
+         [userDefaults objectForKey:@"cocValue"] != nil)
     {
-        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", selectedCamera, cocValue];
+        _selectedCameraModel = [userDefaults stringForKey:@"selectedCameraModel"];
+        _cocValue = [userDefaults objectForKey:@"cocValue"];
+    }
+    
+    if (_selectedCameraModel != nil)
+    {
+        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", _selectedCameraModel, _cocValue];
     }
     
     _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
@@ -47,7 +56,6 @@
     _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
     
     // TODO: Look at defaulting picker selections on load, and retaining across transitions.
-    // TODO: Remember the camera selection across application lifecycle.
 
     // NASTY_STEP1 [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
 }
@@ -94,7 +102,7 @@
     int selectedApertureValue = [selectedFNumber apertureValue];
     NSString *selectedDistance = [_distanceToSubject objectAtIndex:[_picker selectedRowInComponent:2]];
     
-    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectedFocalLength doubleValue] aperture:[NSNumber numberWithInt:selectedApertureValue] circleOfConfusion:cocValue];
+    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectedFocalLength doubleValue] aperture:[NSNumber numberWithInt:selectedApertureValue] circleOfConfusion:_cocValue];
     double nd = [_dofCalc nearDistanceFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue]];
     double fd = [_dofCalc farDistanceForFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue]];
     double tdof = [_dofCalc totalDepthOfFieldForFarDistance:fd nearDistance:nd];
