@@ -59,36 +59,7 @@
     [_picker selectRow:[userDefaults integerForKey:@"selectedFocalLength"] inComponent:0 animated:NO];
     [_picker selectRow:[userDefaults integerForKey:@"selectedFNumber"] inComponent:1 animated:NO];
     [_picker selectRow:[userDefaults integerForKey:@"selectedDistance"] inComponent:2 animated:NO];
-
-    // NASTY_STEP1 [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
 }
-
-/* NASTY_STEP2
--(void) hideNavBar {
-    if (self.navigationController.navigationBar.hidden == NO)
-    {
-        [self.navigationController setNavigationBarHidden:YES animated:YES];
-    }
-}
-*/
-
-//// hide the navigation bar, so it does not appear on the root page
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [self.navigationController setNavigationBarHidden:YES animated:animated];
-//    [super viewWillAppear:animated];
-//}
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [self.navigationController setNavigationBarHidden:NO animated:animated];
-//    [super viewWillDisappear:animated];
-//}
-
-// THIS: could be done in the navigation controller delegate depending on the current view controller
-//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-//{
-//    [navigationController setNavigationBarHidden:YES animated:animated];
-//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -99,6 +70,11 @@
 - (IBAction)calculate:(id)sender
 {
     // TODO: Add a check to ensure that a camera has been selected and we have value for coc.
+    if (_selectedCameraModel == nil || _cocValue == nil)
+    {
+        UIAlertView *warning = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please select a camera model." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [warning show];
+    }
     
     NSString *selectedFocalLength = [_focalLength objectAtIndex:[_picker selectedRowInComponent:0]];
     Aperture *selectedFNumber = [[Aperture apertureLibrary] objectAtIndex:[_picker selectedRowInComponent:1]];
