@@ -32,19 +32,6 @@
     
     _dofCalc = [[DOFCalculator alloc] init];
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    if ([userDefaults stringForKey:@"selectedCameraModel"] != nil &&
-         [userDefaults objectForKey:@"cocValue"] != nil)
-    {
-        _selectedCameraModel = [userDefaults stringForKey:@"selectedCameraModel"];
-        _cocValue = [userDefaults objectForKey:@"cocValue"];
-    }
-    
-    if (_selectedCameraModel != nil)
-    {
-        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", _selectedCameraModel, _cocValue];
-    }
-    
     _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
     
     _fNumber = [[NSMutableArray alloc]init];
@@ -55,7 +42,23 @@
     
     _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
     
-    // TODO: Look at defaulting picker selections on load, and retaining across transitions.
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults stringForKey:@"selectedCameraModel"] != nil &&
+        [userDefaults objectForKey:@"cocValue"] != nil)
+    {
+        _selectedCameraModel = [userDefaults stringForKey:@"selectedCameraModel"];
+        _cocValue = [userDefaults objectForKey:@"cocValue"];
+    }
+    
+    if (_selectedCameraModel != nil)
+    {
+        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", _selectedCameraModel, _cocValue];
+    }
+    
+    [_picker selectRow:[userDefaults integerForKey:@"selectedFocalLength"] inComponent:0 animated:NO];
+    [_picker selectRow:[userDefaults integerForKey:@"selectedFNumber"] inComponent:1 animated:NO];
+    [_picker selectRow:[userDefaults integerForKey:@"selectedDistance"] inComponent:2 animated:NO];
 
     // NASTY_STEP1 [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
 }
@@ -69,17 +72,17 @@
 }
 */
 
-// hide the navigation bar, so it does not appear on the root page
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
-    [super viewWillAppear:animated];
-}
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:NO animated:animated];
-    [super viewWillDisappear:animated];
-}
+//// hide the navigation bar, so it does not appear on the root page
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+//    [super viewWillAppear:animated];
+//}
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//    [super viewWillDisappear:animated];
+//}
 
 // THIS: could be done in the navigation controller delegate depending on the current view controller
 //- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -119,6 +122,11 @@
         totalDepthOfField.text = [NSString stringWithFormat:@"%5.2f m", tdof];
     }
     hyperfocalDistance.text = [NSString stringWithFormat:@"%5.2f m", hfd];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:[_picker selectedRowInComponent:0] forKey:@"selectedFocalLength"];
+    [userDefaults setInteger:[_picker selectedRowInComponent:1] forKey:@"selectedFNumber"];
+    [userDefaults setInteger:[_picker selectedRowInComponent:2] forKey:@"selectedDistance"];
 }
 
 #pragma mark Picker Data Source Methods

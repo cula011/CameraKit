@@ -51,13 +51,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+// Store the selection, so it can be maintained across restarts.
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    //cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    NSNumber *selectedCocValue;
+    NSString *selectedCameraModel;
+    
+    //if ([segue.identifier isEqualToString:@"showMainScene"]){}
+    if (self.searchDisplayController.active)
+    {
+        // get the location in the original array, so that we can correctly match to the original data source
+        NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
+        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
+        selectedCameraModel = [_modelSearch objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
+        selectedCameraModel = [_models objectAtIndex:indexPath.row];
+    }
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:selectedCameraModel forKey:@"selectedCameraModel"];
+    [userDefaults setValue:selectedCocValue forKey:@"cocValue"];
+    
+    return indexPath;
 }
 
 #pragma mark Content Filtering
+
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     [_modelSearch removeAllObjects];
@@ -67,6 +89,7 @@
 }
 
 #pragma mark - UISearchDisplayController Delegate Methods
+
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     
     [self filterContentForSearchText:searchString scope:
@@ -109,38 +132,12 @@
     return cell;
 }
 
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    //ViewController *destViewController = [segue destinationViewController];
-    
-    NSNumber *selectedCocValue;
-    NSString *selectedCameraModel;
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    
-    //if ([segue.identifier isEqualToString:@"showMainScene"]){}
-    if (self.searchDisplayController.active)
-    {
-        // get the location in the original array, so that we can correctly match to the original data source
-        NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
-        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
-        selectedCameraModel = [_modelSearch objectAtIndex:indexPath.row];
-    }
-    else
-    {
-        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
-        selectedCameraModel = [_models objectAtIndex:indexPath.row];
-    }
-    
-    //destViewController.cocValue = selectedCocValue;
-    //destViewController.selectedCamera = selectedCameraModel;
-    
-    //
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setValue:selectedCameraModel forKey:@"selectedCameraModel"];
-    [userDefaults setValue:selectedCocValue forKey:@"cocValue"];
-}
+//#pragma mark - Navigation
+//
+//// In a story board-based application, you will often want to do a little preparation before navigation
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//
+//}
 
 @end

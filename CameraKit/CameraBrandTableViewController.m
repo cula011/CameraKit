@@ -40,6 +40,18 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+// http://stackoverflow.com/a/18903533
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar.layer removeAllAnimations];
+}
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//    [super viewWillDisappear:animated];
+//}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
