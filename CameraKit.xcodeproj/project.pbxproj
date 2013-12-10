@@ -27,6 +27,7 @@
 		FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */; };
 		FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */; };
 		FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */; };
+		FDC0945A18567CFA00DF219E /* DOFCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBrandTableViewController.m; sourceTree = "<group>"; };
 		FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraModelTableViewController.h; path = ../CameraModelTableViewController.h; sourceTree = "<group>"; };
 		FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraModelTableViewController.m; path = ../CameraModelTableViewController.m; sourceTree = "<group>"; };
+		FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOFCalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		FD7A2B5E18488E68007ADDA5 /* CameraKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */,
 				FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */,
 				FD7A2B5F18488E68007ADDA5 /* Supporting Files */,
 			);
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */,
+				FDC0945A18567CFA00DF219E /* DOFCalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

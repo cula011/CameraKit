@@ -13,11 +13,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *camera;
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 
-- (IBAction)calculate:(id)sender;
-
 @property (strong, nonatomic) IBOutlet UILabel *nearDistance;
 @property (strong, nonatomic) IBOutlet UILabel *farDistance;
 @property (strong, nonatomic) IBOutlet UILabel *totalDepthOfField;
 @property (strong, nonatomic) IBOutlet UILabel *hyperfocalDistance;
+
+@property (strong, nonatomic) IBOutlet UISegmentedControl *metricsControl;
+- (IBAction)metricsChanged:(id)sender;
 
 @end

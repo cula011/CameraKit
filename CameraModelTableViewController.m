@@ -7,7 +7,6 @@
 //
 
 #import "CameraModelTableViewController.h"
-#import "ViewController.h"
 #import "Camera.h"
 
 @interface CameraModelTableViewController ()
@@ -37,12 +36,6 @@
     CGRect newBounds = self.tableView.bounds;
     newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
     self.tableView.bounds = newBounds;
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +50,6 @@
     NSNumber *selectedCocValue;
     NSString *selectedCameraModel;
     
-    //if ([segue.identifier isEqualToString:@"showMainScene"]){}
     if (self.searchDisplayController.active)
     {
         // get the location in the original array, so that we can correctly match to the original data source
@@ -131,13 +123,5 @@
     
     return cell;
 }
-
-//#pragma mark - Navigation
-//
-//// In a story board-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//
-//}
 
 @end

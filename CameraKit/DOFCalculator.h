@@ -10,12 +10,17 @@
 
 @interface DOFCalculator : NSObject
 
-// assuming the focal length is provided in millimeters, return the hyperfocal distance in meters
--(double)hyperfocalDistanceForFocalLength:(double)fl aperture:(NSNumber*)f circleOfConfusion: (NSNumber*)coc;
+typedef NS_ENUM(NSInteger, Units)
+{
+    Meteres,
+    Feet
+};
 
--(double)nearDistanceFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd;
+-(double)hyperfocalDistanceForFocalLength:(double)fl aperture:(NSNumber*)f circleOfConfusion: (NSNumber*)coc in:(Units) m;
 
--(double)farDistanceForFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd;
+-(double)nearDistanceFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd in:(Units) m;
+
+-(double)farDistanceForFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd in:(Units) m;
 
 -(double)distanceInFrontOfSubjectForFocusDistance:(double)focus nearDistance:(double)near;
 

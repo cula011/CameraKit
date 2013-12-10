@@ -32,12 +32,6 @@
     CGRect newBounds = self.tableView.bounds;
     newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
     self.tableView.bounds = newBounds;
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 // http://stackoverflow.com/a/18903533
@@ -46,11 +40,6 @@
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar.layer removeAllAnimations];
 }
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [self.navigationController setNavigationBarHidden:NO animated:animated];
-//    [super viewWillDisappear:animated];
-//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -58,13 +47,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    // cell.accessoryType = UITableViewCellAccessoryCheckmark;
-}
-
 #pragma mark Content Filtering
+
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     [_brandSearch removeAllObjects];
@@ -74,6 +58,7 @@
 }
 
 #pragma mark - UISearchDisplayController Delegate Methods
+
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     
     [self filterContentForSearchText:searchString scope:
@@ -119,7 +104,6 @@
 
 #pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
@@ -132,7 +116,6 @@
     {
         destViewController.brandName = [_brands objectAtIndex:indexPath.row];
     }
-    //if ([segue.identifier isEqualToString:@"showCameraModel"]) {
 }
 
 @end

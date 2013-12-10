@@ -12,23 +12,25 @@
 
 @implementation DOFCalculator
 
--(double)hyperfocalDistanceForFocalLength:(double)fl aperture:(NSNumber*)a circleOfConfusion:(NSNumber*) coc;
+-(double)hyperfocalDistanceForFocalLength:(double)fl aperture:(NSNumber*)a circleOfConfusion:(NSNumber*) coc in:(Units) m;
 {
     double fnumber = pow(2, [a doubleValue] / 2);
     double hd = (fl * fl) / (fnumber * [coc doubleValue]) + fl;
-    return hd/1000;
+    return hd / [self divisorForMetric:m];
 }
 
--(double)nearDistanceFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd
+-(double)nearDistanceFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd in:(Units) m
 {
-    double dn = (fd*1000 * (hd*1000 - fl)) / (hd*1000 + fd*1000 - 2 * fl);
-    return dn/1000;
+    double divisor = [self divisorForMetric:m];
+    double dn = (fd*divisor * (hd*divisor - fl)) / (hd*divisor + fd*divisor - 2 * fl);
+    return dn/divisor;
 }
 
--(double)farDistanceForFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd
+-(double)farDistanceForFocalLength:(double)fl hyperfocalDistance:(double)hd focusDistance:(double)fd in:(Units) m
 {
-    double dr = (fd*1000 * (hd*1000 - fl)) / (hd*1000 - fd*1000);
-    return dr/1000;
+    double divisor = [self divisorForMetric:m];
+    double dr = (fd*divisor * (hd*divisor - fl)) / (hd*divisor - fd*divisor);
+    return dr/divisor;
 }
 
 -(double)distanceInFrontOfSubjectForFocusDistance:(double)focus nearDistance: (double) near
@@ -44,6 +46,16 @@
 - (double)totalDepthOfFieldForFarDistance:(double)far nearDistance: (double)near
 {
     return far - near;
+}
+
+-(double)divisorForMetric:(Units)m
+{
+    switch (m) {
+        case Meteres:
+            return 1000;
+        case Feet:
+            return 304.8;
+    }
 }
 
 @end
