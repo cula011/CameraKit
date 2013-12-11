@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD0DD0BB18503079009EF4D0 /* dof_explained.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD0DD0BA18503079009EF4D0 /* dof_explained.gif */; };
 		FD0DD0C9185141E3009EF4D0 /* Aperture.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C4185141E3009EF4D0 /* Aperture.m */; };
 		FD0DD0CA185141E3009EF4D0 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C6185141E3009EF4D0 /* Camera.m */; };
 		FD0DD0CB185141E3009EF4D0 /* DOFCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DD0C8185141E3009EF4D0 /* DOFCalculator.m */; };
@@ -28,6 +27,8 @@
 		FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */; };
 		FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */; };
 		FDC0945A18567CFA00DF219E /* DOFCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */; };
+		FDC0945D1856DA4200DF219E /* dof_explained.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDC0945C1856DA4200DF219E /* dof_explained.gif */; };
+		FDC0945F1857E64200DF219E /* CameraRepository.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDC0945E1857E64200DF219E /* CameraRepository.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD0DD0BA18503079009EF4D0 /* dof_explained.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dof_explained.gif; sourceTree = "<group>"; };
 		FD0DD0C3185141E3009EF4D0 /* Aperture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aperture.h; path = CameraKit/Aperture.h; sourceTree = "<group>"; };
 		FD0DD0C4185141E3009EF4D0 /* Aperture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Aperture.m; path = CameraKit/Aperture.m; sourceTree = "<group>"; };
 		FD0DD0C5185141E3009EF4D0 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = CameraKit/Camera.h; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraModelTableViewController.h; path = ../CameraModelTableViewController.h; sourceTree = "<group>"; };
 		FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraModelTableViewController.m; path = ../CameraModelTableViewController.m; sourceTree = "<group>"; };
 		FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOFCalculatorTests.m; sourceTree = "<group>"; };
+		FDC0945C1856DA4200DF219E /* dof_explained.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dof_explained.gif; sourceTree = "<group>"; };
+		FDC0945E1857E64200DF219E /* CameraRepository.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CameraRepository.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 		FD0DD0BC185030A3009EF4D0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FD0DD0BA18503079009EF4D0 /* dof_explained.gif */,
+				FDC0945C1856DA4200DF219E /* dof_explained.gif */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -147,6 +149,7 @@
 		FD7A2B3F18488E68007ADDA5 /* CameraKit */ = {
 			isa = PBXGroup;
 			children = (
+				FDC0945E1857E64200DF219E /* CameraRepository.plist */,
 				FD7A2B4818488E68007ADDA5 /* AppDelegate.h */,
 				FD7A2B4918488E68007ADDA5 /* AppDelegate.m */,
 				FD7A2B4B18488E68007ADDA5 /* Main.storyboard */,
@@ -272,10 +275,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC0945F1857E64200DF219E /* CameraRepository.plist in Resources */,
 				FD7A2B5218488E68007ADDA5 /* Images.xcassets in Resources */,
 				FD7A2B4418488E68007ADDA5 /* InfoPlist.strings in Resources */,
 				FD7A2B4D18488E68007ADDA5 /* Main.storyboard in Resources */,
-				FD0DD0BB18503079009EF4D0 /* dof_explained.gif in Resources */,
+				FDC0945D1856DA4200DF219E /* dof_explained.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

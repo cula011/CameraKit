@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     _models = [[NSMutableArray alloc] init];
-    for (Camera *camera in [[Camera cameraLibrary] objectForKey:brandName])
+    for (Camera *camera in [Camera modelsFor:brandName])
     {
         [_models addObject:[NSString stringWithFormat:@"%@", camera]];
     }
@@ -54,12 +54,12 @@
     {
         // get the location in the original array, so that we can correctly match to the original data source
         NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
-        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:index] cocValue];
+        selectedCocValue = [[[Camera modelsFor:brandName] objectAtIndex:index] cocValue];
         selectedCameraModel = [_modelSearch objectAtIndex:indexPath.row];
     }
     else
     {
-        selectedCocValue = [[[[Camera cameraLibrary] objectForKey:brandName]objectAtIndex:indexPath.row] cocValue];
+        selectedCocValue = [[[Camera modelsFor:brandName] objectAtIndex:indexPath.row] cocValue];
         selectedCameraModel = [_models objectAtIndex:indexPath.row];
     }
     

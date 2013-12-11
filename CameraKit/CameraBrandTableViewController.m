@@ -23,10 +23,9 @@
 {
     [super viewDidLoad];
     
-    _brands = [[NSArray alloc] initWithArray:[[Camera cameraLibrary] allKeys]];
+    _brands = [Camera brands];
     
-    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_brands count]];
-    
+    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_brands count]];    
 
     // Hide the search bar until user scrolls up
     CGRect newBounds = self.tableView.bounds;

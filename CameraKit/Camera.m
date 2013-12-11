@@ -13,32 +13,60 @@
 @synthesize brandName, modelName;
 @synthesize cocValue;
 
-// http://en.wikipedia.org/wiki/Circle_of_confusion#Circle_of_confusion_diameter_limit_based_on_d.2F1500
-+(NSDictionary*)cameraLibrary
++(NSArray *)brands
 {
-    static NSDictionary *cameraLibrary = nil;
-    static NSOrderedSet *canon = nil;
+    static NSArray *brands = nil;
     
-    // TODO: Investigate how to load from a plist file or something similar!
-    if (canon == nil)
+    if (brands == nil)
     {
-        canon = [NSOrderedSet orderedSetWithObjects:
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"1D Mark IV" cocValue:[NSNumber numberWithDouble:0.023]],
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"1D X" cocValue:[NSNumber numberWithDouble:0.030]],
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"5D Mark III" cocValue:[NSNumber numberWithDouble:0.030]],
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"6D" cocValue:[NSNumber numberWithDouble:0.030]],
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"7D" cocValue:[NSNumber numberWithDouble:0.019]],
-                 [[Camera alloc]initWithBrandName:@"Canon" modelName:@"550D" cocValue:[NSNumber numberWithDouble:0.019]],
-                 nil];
+        brands = [NSArray arrayWithArray:[[Camera cameraRepository] allKeys]];
     }
     
-    if (cameraLibrary == nil)
+    return brands;
+}
+
++(NSArray *)modelsFor:(NSString *)brand
+{
+    NSDictionary *modelRepository = [[Camera cameraRepository] objectForKey:brand];
+    
+    // TODO: Model array is being re-created on each request. This should possibly be cached!
+    NSMutableArray *models = [[NSMutableArray alloc] initWithCapacity:[modelRepository count]];
+    
+    for (NSDictionary *model in modelRepository)
     {
-        cameraLibrary = [NSDictionary dictionaryWithObjectsAndKeys:
-                         canon, @"Canon",
-                         nil];
+        Camera *camera = [[self alloc] initWithBrandName:brand modelName:[model objectForKey:@"modelName"] cocValue:[model objectForKey:@"cocValue"]];
+        [models addObject:camera];
     }
-    return cameraLibrary;
+    
+    return models;
+}
+
++(NSDictionary *)cameraRepository
+{
+    NSError *errorDesc = nil;
+    NSPropertyListFormat format;
+    NSString *plistPath;
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                              NSUserDomainMask, YES) objectAtIndex:0];
+    plistPath = [rootPath stringByAppendingPathComponent:@"CameraRepository.plist"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+    {
+        plistPath = [[NSBundle mainBundle] pathForResource:@"CameraRepository" ofType:@"plist"];
+    }
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    
+    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
+                                          propertyListWithData:plistXML
+                                          options:NSPropertyListXMLFormat_v1_0
+                                          format:&format
+                                          error:&errorDesc];
+    
+    if (!temp)
+    {
+        NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
+    }
+    
+    return temp;
 }
 
 -(Camera *)initWithBrandName:(NSString *)brand modelName:(NSString *)model cocValue:(NSNumber *)coc

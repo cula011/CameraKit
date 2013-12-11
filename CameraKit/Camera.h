@@ -13,8 +13,8 @@
 @property NSString *brandName, *modelName;
 @property NSNumber *cocValue;
 
-+(NSDictionary*)cameraLibrary;
++(NSArray *)brands;
 
--(Camera *)initWithBrandName:(NSString *)brand modelName:(NSString *)model cocValue:(NSNumber *)coc;
++(NSArray *)modelsFor:(NSString *)brand;
 
 @end
