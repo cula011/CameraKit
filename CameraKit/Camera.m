@@ -34,7 +34,9 @@
     
     for (NSDictionary *model in modelRepository)
     {
-        Camera *camera = [[self alloc] initWithBrandName:brand modelName:[model objectForKey:@"modelName"] cocValue:[model objectForKey:@"cocValue"]];
+        Camera *camera = [[self alloc] initWithBrandName:brand
+                                               modelName:[model objectForKey:@"modelName"]
+                                                cocValue:[model objectForKey:@"cocValue"]];
         [models addObject:camera];
     }
     
@@ -55,18 +57,17 @@
     }
     NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
     
-    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
-                                          propertyListWithData:plistXML
-                                          options:NSPropertyListXMLFormat_v1_0
-                                          format:&format
-                                          error:&errorDesc];
+    NSDictionary *repository = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML
+                                                                                   options:NSPropertyListXMLFormat_v1_0
+                                                                                    format:&format
+                                                                                     error:&errorDesc];
     
-    if (!temp)
+    if (!repository)
     {
         NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
     }
     
-    return temp;
+    return repository;
 }
 
 -(Camera *)initWithBrandName:(NSString *)brand modelName:(NSString *)model cocValue:(NSNumber *)coc

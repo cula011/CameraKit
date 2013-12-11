@@ -3,224 +3,2181 @@
 <plist version="1.0">
 <dict>
 	<key>Canon</key>
+	<array>
+		<dict>
+			<key>modelName</key>
+			<string>1D</string>
+			<key>cocValue</key>
+			<real>0.023</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D Mark II</string>
+			<key>cocValue</key>
+			<real>0.023</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D Mark II N</string>
+			<key>cocValue</key>
+			<real>0.023</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D Mark III</string>
+			<key>cocValue</key>
+			<real>0.023</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D Mark IV</string>
+			<key>cocValue</key>
+			<real>0.023</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D X</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1D C</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1DS</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1Ds Mark II</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>1Ds Mark III</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>5D</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>5D Mark II</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>5D Mark III</string>
+			<key>cocValue</key>
+			<real>0.03</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>7D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>10D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>20D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>20Da</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>30D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>40D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>50D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>60D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>60Da</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>D30</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>D60</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel / 300D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel T1i / 500D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel T2i / 550D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel T3i / 600D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel T4i / 650D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel T3 / 1100D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel XS / 1000D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel XT / 350D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel XTi / 400D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Digital Rebel XSi / 450D</string>
+			<key>cocValue</key>
+			<real>0.019</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A10</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A20</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A30</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A40</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A60</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A70</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A75</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A80</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A85</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A95</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A100</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A200</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A310</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A400</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A430</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A450</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A460</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A470</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A480</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A490</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A495</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A510</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A520</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A530</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A540</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A550</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A560</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A570 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A580</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A590 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A610</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A620</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A630</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A640</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A650</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A650 IS</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A700</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A710 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A720 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A800</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A810</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A820</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A900</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A1000 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A1100 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A1200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A1300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A2000 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A2100 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A2300 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A2400 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A3000 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A3100 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A3200 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A3400 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A3300 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot A4000 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot D10</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot D20</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot E1</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G1</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G1X</string>
+			<key>cocValue</key>
+			<real>0.016</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G2</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G3</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G5</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G6</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G7</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G9</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G10</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G11</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot G12</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot Pro1</string>
+			<key>cocValue</key>
+			<real>0.008</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot Pro 90 IS</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot S1 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot S2 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot S3 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot S5 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S30</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S40</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S45</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S50</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S60</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S70</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S80</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S90</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S95</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S110 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S200 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S230 Elf</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S300 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S330 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S400</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S410</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>PowerShot S500</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD10 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD20 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD30 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD40</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD100 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD110 Elph</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD400</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD430 Wireless</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD450</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD500</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD550</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD600</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD630</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD700 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD750</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD770 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD780 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD790 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD800 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD850 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD870 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD880 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD890 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD900</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD940 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD950 IS</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD960 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD970 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD980 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD990 IS</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD1000</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD1100 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD1200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD1300 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD1400 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD3500 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD4000 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SD4500 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX1 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX10 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX20 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX30 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX100 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX110 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX120 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX130 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX200 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX210 IS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX240 HS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>Powershot SX260 HS</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+	</array>
+	<key>Fujifilm</key>
+	<array>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 30i</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A100</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A120</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A150</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A170</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A203</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A303</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A330</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A340</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A345</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A350</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A400</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A600</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A610</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A800</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix A920</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix AV200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix AV250</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix AX280</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix AX350</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix E500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix E510</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix E550</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix E900</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F10</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F11</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F20</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F30</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F31fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F40fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F50fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F60fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F70EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F80EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F100fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F200EXR</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F300EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F401</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F402</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F440</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F450</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F455</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F470</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F480</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F500EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F510</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F550</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F600EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F660EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F601</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F650</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F700</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F770EXR</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F710</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F750</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix F810</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix IS-1</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix IS Pro</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix HS-10</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix HS20EXR</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix HS30EXR</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix J30</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix J100</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix J120</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix J110W</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix J150W</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JV200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX350</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX370</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JX550</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JZ100</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JZ200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JZ300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix JZ500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S100</string>
+			<key>cocValue</key>
+			<real>0.008</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S602</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 2600</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 2650</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 2800</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 3800</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 4800</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 4900</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S200EXR</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S1000fd</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S1500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S1600</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S1800</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S2000HD</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S2500HD</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S2800HD</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S2950</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3000</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3100</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S4000</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S4200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S4500</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S5000</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S5200 / S5600</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S5500 / S5100</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S5700</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix SL240</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix SL300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 6800</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix 7000</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S6500fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S8000fd</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S8100fd</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S9000 / S9500</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S1 Pro</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S2 Pro</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3 Pro</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S3 Pro UVIR</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S5 Pro</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix S20 Pro</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix T200</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix T300</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix T400</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix V10</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix W3</string>
+			<key>cocValue</key>
+			<real>0.006</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix X10</string>
+			<key>cocValue</key>
+			<real>0.008</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix X100</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix XP30</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix XP50</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix XP150</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix X-Pro1</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix X-S1</string>
+			<key>cocValue</key>
+			<real>0.008</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z1</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z2</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z3</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z20fd</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z33WP</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z35</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z50fd</string>
+			<key>cocValue</key>
+			<real>0.007</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z70</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z90</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z110</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z200fd</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z700EXR</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z900EXR</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+		<dict>
+			<key>modelName</key>
+			<string>FinePix Z1000EXR</string>
+			<key>cocValue</key>
+			<real>0.005</real>
+		</dict>
+	</array>
+    <key>Leica</key>
     <array>
-    <dict><key>modelName</key><string>1D</string><key>cocValue</key><real>0.023</real></dict>
-    <dict><key>modelName</key><string>1D Mark II</string><key>cocValue</key><real>0.023</real></dict>
-    <dict><key>modelName</key><string>1D Mark II N</string><key>cocValue</key><real>0.023</real></dict>
-    <dict><key>modelName</key><string>1D Mark III</string><key>cocValue</key><real>0.023</real></dict>
-    <dict><key>modelName</key><string>1D Mark IV</string><key>cocValue</key><real>0.023</real></dict>
-    <dict><key>modelName</key><string>1D X</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>1D C</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>1DS</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>1Ds Mark II</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>1Ds Mark III</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>5D</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>5D Mark II</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>5D Mark III</string><key>cocValue</key><real>0.03</real></dict>
-    <dict><key>modelName</key><string>7D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>10D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>20D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>20Da</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>30D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>40D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>50D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>60D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>60Da</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>D30</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>D60</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel / 300D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel T1i / 500D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel T2i / 550D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel T3i / 600D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel T4i / 650D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel T3 / 1100D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel XS / 1000D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel XT / 350D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel XTi / 400D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>Digital Rebel XSi / 450D</string><key>cocValue</key><real>0.019</real></dict>
-    <dict><key>modelName</key><string>PowerShot A10</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A20</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A30</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A40</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A60</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A70</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A75</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A80</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A85</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A95</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A100</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A200</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A300</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A310</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A400</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A430</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A450</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A460</string><key>cocValue</key><real>0.004</real></dict>
-    <dict><key>modelName</key><string>PowerShot A470</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A480</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A490</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A495</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A510</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A520</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A530</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A540</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A550</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A560</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A570 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A580</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A590 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A610</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A620</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A630</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A640</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A650</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A650 IS</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot A700</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A710 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A720 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A800</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A810</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A820</string><key>cocValue</key><real>0.007</real></dict>
-    <dict><key>modelName</key><string>PowerShot A900</string><key>cocValue</key><real>0.007</real></dict>
-    <dict><key>modelName</key><string>PowerShot A1000 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A1100 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A1200</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A1300</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A2000 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A2100 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A2300 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A2400 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A3000 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A3100 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A3200 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A3400 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A3300 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot A4000 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot D10</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot D20</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot E1</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot G1</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G1X</string><key>cocValue</key><real>0.016</real></dict>
-    <dict><key>modelName</key><string>PowerShot G2</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G3</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G5</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G6</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G7</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G9</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot G10</string><key>cocValue</key><real>0.007</real></dict>
-    <dict><key>modelName</key><string>PowerShot G11</string><key>cocValue</key><real>0.007</real></dict>
-    <dict><key>modelName</key><string>PowerShot G12</string><key>cocValue</key><real>0.007</real></dict>
-    <dict><key>modelName</key><string>Powershot Pro1</string><key>cocValue</key><real>0.008</real></dict>
-    <dict><key>modelName</key><string>PowerShot Pro 90 IS</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot S1 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot S2 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot S3 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot S5 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S30</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S40</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S45</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S50</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S60</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S70</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S80</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S90</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S95</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S110 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S200 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S230 Elf</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S300 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S330 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>PowerShot S400</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S410</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>PowerShot S500</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD10 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD20 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD30 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD40</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD100 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD110 Elph</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD200</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD300</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD400</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD430 Wireless</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD450</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD500</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD550</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD600</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD630</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD700 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD750</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD770 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD780 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD790 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD800 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD850 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD870 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD880 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD890 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD900</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD940 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD950 IS</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD960 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD970 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD980 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD990 IS</string><key>cocValue</key><real>0.006</real></dict>
-    <dict><key>modelName</key><string>Powershot SD1000</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD1100 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD1200</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD1300 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD1400 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD3500 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD4000 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SD4500 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX1 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX10 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX20 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX30 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX100 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX110 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX120 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX130 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX200 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX210 IS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX240 HS</string><key>cocValue</key><real>0.005</real></dict>
-    <dict><key>modelName</key><string>Powershot SX260 HS</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>C-Lux 1</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>C-Lux 3</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>Digilux 1</string><key>cocValue</key><real>0.006</real></dict>
+    <dict><key>modelName</key><string>Digilux 2</string><key>cocValue</key><real>0.008</real></dict>
+    <dict><key>modelName</key><string>Digilux 3</string><key>cocValue</key><real>0.015</real></dict>
+    <dict><key>modelName</key><string>D-Lux</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>D-Lux 2</string><key>cocValue</key><real>0.007</real></dict>
+    <dict><key>modelName</key><string>D-Lux 3</string><key>cocValue</key><real>0.007</real></dict>
+    <dict><key>modelName</key><string>D-Lux 4</string><key>cocValue</key><real>0.006</real></dict>
+    <dict><key>modelName</key><string>D-Lux 5</string><key>cocValue</key><real>0.006</real></dict>
+    <dict><key>modelName</key><string>M8</string><key>cocValue</key><real>0.023</real></dict>
+    <dict><key>modelName</key><string>M8.2</string><key>cocValue</key><real>0.023</real></dict>
+    <dict><key>modelName</key><string>M9</string><key>cocValue</key><real>0.03</real></dict>
+    <dict><key>modelName</key><string>M9-P</string><key>cocValue</key><real>0.03</real></dict>
+    <dict><key>modelName</key><string>M-Monochrom</string><key>cocValue</key><real>0.03</real></dict>
+    <dict><key>modelName</key><string>V-LUX 1</string><key>cocValue</key><real>0.006</real></dict>
+    <dict><key>modelName</key><string>V-LUX 2</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>V-LUX 3</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>V-LUX 20</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>V-LUX 30</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>V-LUX 40</string><key>cocValue</key><real>0.005</real></dict>
+    <dict><key>modelName</key><string>X1</string><key>cocValue</key><real>0.023</real></dict>
+    <dict><key>modelName</key><string>X2</string><key>cocValue</key><real>0.023</real></dict>
     </array>
-<key>Nikon</key>
-    <array>
-        <dict>
-            <key>modelName</key>
-            <string>D3s</string>
-            <key>cocValue</key>
-            <string>0.03</string>
-        </dict>
-    </array>
-    <key>Olympus</key>
-    <array>
-        <dict>
-            <key>modelName</key>
-            <string>E-PM1</string>
-            <key>cocValue</key>
-            <real>0.015</real>
-        </dict>
-    </array>
-    <key>Panasonic</key>
-    <array>
-        <dict>
-            <key>modelName</key>
-            <string>Lumix DMC-FZ1</string>
-            <key>cocValue</key>
-            <real>0.004</real>
-        </dict>
-    </array>
-    <key>Sony</key>
-    <array>
-        <dict>
-            <key>modelName</key>
-            <string>NEX-3</string>
-            <key>cocValue</key>
-            <real>0.02</real>
-        </dict>
-    </array>
+	<key>Nikon</key>
+	<array>
+        <dict><key>modelName</key><string>Coolpix 2000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 2100</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Coolpix 2200</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Coolpix 2500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 3100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 3200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 3500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 3700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4200</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4300</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4500</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4600</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 4800</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5000</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5200</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5400</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5600</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5700</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Coolpix 5900</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 7600</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 7900</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 8400</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Coolpix 8700</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Coolpix 8800</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Coolpix S9600 / S9100</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Coolpix 775</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix 885</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix 995</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix AW100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L11</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L12</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L14</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L15</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L16</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L18</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L19</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L21</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L22</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L24</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L26</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L110</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L120</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix L810</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P1</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P2</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P3</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P4</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P310</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P510</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix P5000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P5100</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P6000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P7000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix P7100</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Coolpix SQ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S7c</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S30</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Coolpix S50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S50c</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S51</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S51c</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S52c</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S210</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S220</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S230</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S510</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S520</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S520</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S550</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S560</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S570</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S600</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S610</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S610c</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S620</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S630</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S640</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S1100pj</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S1200pj</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S3000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S3000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S3100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S3300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S4100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S4300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S5100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S6000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S6100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S6200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S6300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S8000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S8200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S8100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S9100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Coolpix S9300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>1 J1</string><key>cocValue</key><real>0.011</real></dict>
+        <dict><key>modelName</key><string>1 V1</string><key>cocValue</key><real>0.011</real></dict>
+        <dict><key>modelName</key><string>D1H</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D1X</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D2H</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D2Hs</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D2X</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D2Xs</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D3</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D3x</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D3s</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D4</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D40</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D40x</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D50</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D60</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D70</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D70s</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D80</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D90</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D100</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D200</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D300</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D300S</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D700</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D800</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D800E</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>D3000</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D3100</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D3200</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D5000</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D5100</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>D7000</string><key>cocValue</key><real>0.02</real></dict>
+	</array>
+	<key>Olympus</key>
+	<array>
+		<dict>
+			<key>modelName</key>
+			<string>E-PM1</string>
+			<key>cocValue</key>
+			<real>0.015</real>
+		</dict>
+	</array>
+	<key>Panasonic</key>
+	<array>
+		<dict>
+			<key>modelName</key>
+			<string>Lumix DMC-FZ1</string>
+			<key>cocValue</key>
+			<real>0.004</real>
+		</dict>
+	</array>
+	<key>Sony</key>
+	<array>
+		<dict>
+			<key>modelName</key>
+			<string>NEX-3</string>
+			<key>cocValue</key>
+			<real>0.02</real>
+		</dict>
+	</array>
 </dict>
 </plist>
