@@ -30,7 +30,7 @@
     NSDictionary *modelRepository = [[Camera cameraRepository] objectForKey:brand];
     
     // TODO: Model array is being re-created on each request. This should possibly be cached!
-    NSMutableArray *models = [[NSMutableArray alloc] initWithCapacity:[modelRepository count]];
+    NSMutableArray *models = [NSMutableArray arrayWithCapacity:[modelRepository count]];
     
     for (NSDictionary *model in modelRepository)
     {

@@ -25,7 +25,7 @@
     
     _brands = [Camera brands];
     
-    _brandSearch = [[NSMutableArray alloc] initWithCapacity:[_brands count]];    
+    _brandSearch = [NSMutableArray arrayWithCapacity:[_brands count]];
 
     // Hide the search bar until user scrolls up
     CGRect newBounds = self.tableView.bounds;
@@ -88,7 +88,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CameraBrandCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath]; // TODO: Why did using 'self.tableView' instead of tableView fix everything?!
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (tableView == self.searchDisplayController.searchResultsTableView)
     {

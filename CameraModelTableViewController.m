@@ -11,7 +11,7 @@
 
 @interface CameraModelTableViewController ()
 
-@property (strong, nonatomic) NSMutableArray *models;
+@property (strong, nonatomic) NSArray *models;
 @property (strong, nonatomic) NSMutableArray *modelSearch;
 
 @end
@@ -23,14 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _models = [[NSMutableArray alloc] init];
-    for (Camera *camera in [Camera modelsFor:brandName])
-    {
-        [_models addObject:[NSString stringWithFormat:@"%@", camera]];
-    }
-    
-    _modelSearch = [[NSMutableArray alloc] initWithCapacity:[_models count]];
+
+    _models = [NSArray arrayWithArray:[Camera modelsFor:brandName]];
+
+    _modelSearch = [NSMutableArray arrayWithCapacity:[_models count]];
     
     // Hide the search bar until user scrolls up
     CGRect newBounds = self.tableView.bounds;
@@ -53,14 +49,13 @@
     if (self.searchDisplayController.active)
     {
         // get the location in the original array, so that we can correctly match to the original data source
-        NSUInteger index = [_models indexOfObject:[_modelSearch objectAtIndex:indexPath.row]];
-        selectedCocValue = [[[Camera modelsFor:brandName] objectAtIndex:index] cocValue];
-        selectedCameraModel = [_modelSearch objectAtIndex:indexPath.row];
+        selectedCocValue = [[_modelSearch objectAtIndex:indexPath.row] cocValue];
+        selectedCameraModel = [NSString stringWithFormat:@"%@ %@", [[_modelSearch objectAtIndex:indexPath.row] brandName], [[_modelSearch objectAtIndex:indexPath.row] modelName]];
     }
     else
     {
         selectedCocValue = [[[Camera modelsFor:brandName] objectAtIndex:indexPath.row] cocValue];
-        selectedCameraModel = [_models objectAtIndex:indexPath.row];
+        selectedCameraModel = [NSString stringWithFormat:@"%@ %@", [[_models objectAtIndex:indexPath.row] brandName], [[_models objectAtIndex:indexPath.row] modelName]];
     }
     
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -76,7 +71,7 @@
 {
     [_modelSearch removeAllObjects];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.modelName contains[cd] %@", searchText];
     _modelSearch = [NSMutableArray arrayWithArray:[_models filteredArrayUsingPredicate:predicate]];
 }
 
@@ -113,12 +108,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CameraModelCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath]; // TODO: Why did using 'self.tableView' instead of tableView fix everything?!
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [_modelSearch objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[_modelSearch objectAtIndex:indexPath.row] modelName];
     } else {
-        cell.textLabel.text = [_models objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[_models objectAtIndex:indexPath.row] modelName];
     }
     
     return cell;
