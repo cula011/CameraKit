@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraBrandTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface CameraBrandTableViewController : UITableViewController
 
 @end

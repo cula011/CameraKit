@@ -10,7 +10,7 @@
 #import "CameraModelTableViewController.h"
 #import "Camera.h"
 
-@interface CameraBrandTableViewController ()
+@interface CameraBrandTableViewController () <UISearchDisplayDelegate>
 
 @property (strong, nonatomic) NSArray *brands;
 @property (strong, nonatomic) NSMutableArray *brandSearch;
@@ -18,6 +18,8 @@
 @end
 
 @implementation CameraBrandTableViewController
+
+#pragma mark - UIViewController lifecycle methods
 
 - (void)viewDidLoad
 {
@@ -28,9 +30,9 @@
     _brandSearch = [NSMutableArray arrayWithCapacity:[_brands count]];
 
     // Hide the search bar until user scrolls up
-//    CGRect newBounds = self.tableView.bounds;
-//    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
-//    self.tableView.bounds = newBounds;
+    CGRect newBounds = self.tableView.bounds;
+    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
+    self.tableView.bounds = newBounds;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -47,26 +49,24 @@
 
 #pragma mark Content Filtering
 
--(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+-(void)filterContentForSearchString:(NSString*)searchString
 {
     [_brandSearch removeAllObjects];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[cd] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[search] %@", searchString];
     _brandSearch = [NSMutableArray arrayWithArray:[_brands filteredArrayUsingPredicate:predicate]];
 }
 
-#pragma mark - UISearchDisplayController Delegate Methods
+#pragma mark - UISearchDisplayDelegate methods
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     
-    [self filterContentForSearchText:searchString scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:
-      [self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    [self filterContentForSearchString:searchString];
     
     return YES;
 }
 
-#pragma mark - Table view data source
+#pragma mark - UITableViewDataSource methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -75,13 +75,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tableView == self.searchDisplayController.searchResultsTableView)
+    if (tableView == self.tableView)
     {
-        return [_brandSearch count];
+        return [_brands count];
     }
     else
     {
-        return [_brands count];
+        return [_brandSearch count];
     }
 }
 
@@ -89,14 +89,15 @@
 {
     static NSString *CellIdentifier = @"CameraBrandCell";
     // https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/TableView_iPhone/CreateConfigureTableView/CreateConfigureTableView.html#//apple_ref/doc/uid/TP40007451-CH6-SW5
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    // re: self.tableView http://useyourloaf.com/blog/2012/09/06/search-bar-table-view-storyboard.html
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (tableView == self.searchDisplayController.searchResultsTableView)
-    {
-        cell.textLabel.text = [_brandSearch objectAtIndex:indexPath.row];
-    } else
+    if (tableView == self.tableView)
     {
         cell.textLabel.text = [_brands objectAtIndex:indexPath.row];
+    } else
+    {
+        cell.textLabel.text = [_brandSearch objectAtIndex:indexPath.row];
     }
     
     return cell;
@@ -109,15 +110,18 @@
     NSString *brandName = nil;
     NSIndexPath *indexPath = nil;
     
-    if ([self.searchDisplayController isActive])
+    if ([segue.identifier isEqualToString:@"showCameraModel"])
     {
-        indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-        brandName = [_brandSearch objectAtIndex:indexPath.row];
-    }
-    else
-    {
-        indexPath = [self.tableView indexPathForSelectedRow];
-        brandName = [_brands objectAtIndex:indexPath.row];
+        if ([self.searchDisplayController isActive])
+        {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            brandName = [_brandSearch objectAtIndex:indexPath.row];
+        }
+        else
+        {
+            indexPath = [self.tableView indexPathForSelectedRow];
+            brandName = [_brands objectAtIndex:indexPath.row];
+        }
     }
     
     [segue.destinationViewController setBrandName:brandName];

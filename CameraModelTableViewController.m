@@ -9,7 +9,7 @@
 #import "CameraModelTableViewController.h"
 #import "Camera.h"
 
-@interface CameraModelTableViewController ()
+@interface CameraModelTableViewController () <UISearchDisplayDelegate>
 
 @property (strong, nonatomic) NSArray *models;
 @property (strong, nonatomic) NSMutableArray *modelSearch;
@@ -19,6 +19,8 @@
 @implementation CameraModelTableViewController
 
 @synthesize brandName;
+
+#pragma mark - UIViewController lifecycle methods
 
 - (void)viewDidLoad
 {
@@ -31,9 +33,9 @@
     [[self navigationItem] setTitle:brandName];
     
     // Hide the search bar until user scrolls up
-//    CGRect newBounds = self.tableView.bounds;
-//    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
-//    self.tableView.bounds = newBounds;
+    CGRect newBounds = self.tableView.bounds;
+    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
+    self.tableView.bounds = newBounds;
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +43,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark Content Filtering
+
+-(void)filterContentForSearchString:(NSString*)searchString
+{
+    [_modelSearch removeAllObjects];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.modelName contains[search] %@", searchString];
+    _modelSearch = [NSMutableArray arrayWithArray:[_models filteredArrayUsingPredicate:predicate]];
+}
+
+#pragma mark - UISearchDisplayDelegate methods
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchString:searchString];
+    
+    return YES;
+}
+
+#pragma mark - UITableViewDelegate methods
 
 // Store the selection, so it can be maintained across restarts.
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,27 +93,7 @@
     return indexPath;
 }
 
-#pragma mark Content Filtering
-
--(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-{
-    [_modelSearch removeAllObjects];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.modelName contains[cd] %@", searchText];
-    _modelSearch = [NSMutableArray arrayWithArray:[_models filteredArrayUsingPredicate:predicate]];
-}
-
-#pragma mark - UISearchDisplayController Delegate Methods
-
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{    
-    [self filterContentForSearchText:searchString scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
-    
-    return YES;
-}
-
-#pragma mark - Table view data source
+#pragma mark - UITableViewDataSource methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -100,13 +103,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    if (tableView == self.searchDisplayController.searchResultsTableView)
+    if (tableView == self.tableView)
     {
-        return [_modelSearch count];
+        return [_models count];
     }
     else
     {
-        return [_models count];
+        return [_modelSearch count];
     }
 }
 
@@ -114,40 +117,17 @@
 {
     static NSString *CellIdentifier = @"CameraModelCell";
     // https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/TableView_iPhone/CreateConfigureTableView/CreateConfigureTableView.html#//apple_ref/doc/uid/TP40007451-CH6-SW5
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    // re: self.tableView http://useyourloaf.com/blog/2012/09/06/search-bar-table-view-storyboard.html    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (tableView == self.searchDisplayController.searchResultsTableView)
+    if (tableView == self.tableView)
     {
-        cell.textLabel.text = [[_modelSearch objectAtIndex:indexPath.row] modelName];
-    } else {
         cell.textLabel.text = [[_models objectAtIndex:indexPath.row] modelName];
+    } else {
+        cell.textLabel.text = [[_modelSearch objectAtIndex:indexPath.row] modelName];
     }
     
     return cell;
 }
-
-//=====
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"CameraModelCell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];// forIndexPath:indexPath];
-//    
-//    if (cell == nil)
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-//    }
-//    
-//    if (tableView == self.searchDisplayController.searchResultsTableView)
-//    {
-//        cell.textLabel.text = [[_modelSearch objectAtIndex:indexPath.row] modelName];
-//    } else {
-//        cell.textLabel.text = [[_models objectAtIndex:indexPath.row] modelName];
-//    }
-//    
-//    return cell;
-//}
-//=====
-
 
 @end

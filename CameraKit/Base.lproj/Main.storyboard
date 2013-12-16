@@ -156,9 +156,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="c8F-Bq-MXu">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Y6b-b6-8pi" id="oSg-pQ-yUc"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CameraBrandCell" id="6cT-a3-R4B">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cT-a3-R4B" id="y3F-Kn-9ai">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -176,8 +184,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Camera Brand" id="fCa-Wz-w1P"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="uaJ-Dd-Lzh" id="VSE-wc-bNb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4i-QN-J73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="uaJ-Dd-Lzh">
+                    <connections>
+                        <outlet property="delegate" destination="Y6b-b6-8pi" id="yfL-J4-Es6"/>
+                        <outlet property="searchBar" destination="c8F-Bq-MXu" id="qb4-6X-9zd"/>
+                        <outlet property="searchContentsController" destination="Y6b-b6-8pi" id="HGh-nw-LDi"/>
+                        <outlet property="searchResultsDataSource" destination="Y6b-b6-8pi" id="mzT-Ql-s6f"/>
+                        <outlet property="searchResultsDelegate" destination="Y6b-b6-8pi" id="zKD-vt-6dy"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2117" y="84"/>
         </scene>
@@ -189,9 +209,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="GmD-6v-bak">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="f5u-BL-Cua" id="azO-XP-zak"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CameraModelCell" id="ryO-BP-5s7">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ryO-BP-5s7" id="BtL-2K-XFQ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -208,8 +236,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="DIb-F1-HwA"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Dha-bz-jqm" id="pnH-x2-Rlh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KIl-8d-RJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Dha-bz-jqm">
+                    <connections>
+                        <outlet property="delegate" destination="f5u-BL-Cua" id="uoS-ZT-QuU"/>
+                        <outlet property="searchBar" destination="GmD-6v-bak" id="Ohb-Rz-GpS"/>
+                        <outlet property="searchContentsController" destination="f5u-BL-Cua" id="Jdp-oc-hGc"/>
+                        <outlet property="searchResultsDataSource" destination="f5u-BL-Cua" id="6jD-u7-EFD"/>
+                        <outlet property="searchResultsDelegate" destination="f5u-BL-Cua" id="96J-MN-ncc"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2562" y="84"/>
         </scene>
