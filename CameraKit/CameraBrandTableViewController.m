@@ -28,16 +28,15 @@
     _brandSearch = [NSMutableArray arrayWithCapacity:[_brands count]];
 
     // Hide the search bar until user scrolls up
-    CGRect newBounds = self.tableView.bounds;
-    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
-    self.tableView.bounds = newBounds;
+//    CGRect newBounds = self.tableView.bounds;
+//    newBounds.origin.y = newBounds.origin.y + self.searchDisplayController.searchBar.bounds.size.height;
+//    self.tableView.bounds = newBounds;
 }
 
-// http://stackoverflow.com/a/18903533
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar.layer removeAllAnimations];
+    [self.navigationController.navigationBar.layer removeAllAnimations]; //http://stackoverflow.com/a/18903533
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,7 +60,8 @@
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     
     [self filterContentForSearchText:searchString scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:
+      [self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     
     return YES;
 }
@@ -88,7 +88,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CameraBrandCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    // https://developer.apple.com/Library/ios/documentation/UserExperience/Conceptual/TableView_iPhone/CreateConfigureTableView/CreateConfigureTableView.html#//apple_ref/doc/uid/TP40007451-CH6-SW5
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (tableView == self.searchDisplayController.searchResultsTableView)
     {
@@ -105,16 +106,21 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    CameraModelTableViewController *destViewController = [segue destinationViewController];
-    if (self.searchDisplayController.active)
+    NSString *brandName = nil;
+    NSIndexPath *indexPath = nil;
+    
+    if ([self.searchDisplayController isActive])
     {
-        destViewController.brandName = [_brandSearch objectAtIndex:indexPath.row];
+        indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+        brandName = [_brandSearch objectAtIndex:indexPath.row];
     }
     else
     {
-        destViewController.brandName = [_brands objectAtIndex:indexPath.row];
+        indexPath = [self.tableView indexPathForSelectedRow];
+        brandName = [_brands objectAtIndex:indexPath.row];
     }
+    
+    [segue.destinationViewController setBrandName:brandName];
 }
 
 @end
