@@ -45,28 +45,31 @@
 
 +(NSDictionary *)cameraRepository
 {
-    NSError *errorDesc = nil;
-    NSPropertyListFormat format;
-    NSString *plistPath;
-    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                              NSUserDomainMask, YES) objectAtIndex:0];
-    plistPath = [rootPath stringByAppendingPathComponent:@"CameraRepository.plist"];
-    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+    static NSDictionary *repository = nil;
+    
+    if (repository == nil)
     {
-        plistPath = [[NSBundle mainBundle] pathForResource:@"CameraRepository" ofType:@"plist"];
+        NSPropertyListFormat format;
+        NSError *errorDesc = nil;
+        NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                                  NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *plistPath = [rootPath stringByAppendingPathComponent:@"CameraRepository.plist"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+        {
+            plistPath = [[NSBundle mainBundle] pathForResource:@"CameraRepository" ofType:@"plist"];
+        }
+        NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+        
+        repository = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML
+                                                                               options:NSPropertyListXMLFormat_v1_0
+                                                                                format:&format
+                                                                                 error:&errorDesc];
+        if (!repository)
+        {
+            NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
+        }
     }
-    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-    
-    NSDictionary *repository = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML
-                                                                                   options:NSPropertyListXMLFormat_v1_0
-                                                                                    format:&format
-                                                                                     error:&errorDesc];
-    
-    if (!repository)
-    {
-        NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
-    }
-    
+        
     return repository;
 }
 

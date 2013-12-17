@@ -2154,30 +2154,636 @@
 	</array>
 	<key>Olympus</key>
 	<array>
-		<dict>
-			<key>modelName</key>
-			<string>E-PM1</string>
-			<key>cocValue</key>
-			<real>0.015</real>
-		</dict>
+        <dict><key>modelName</key><string>AZ-1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Brio D-230</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-160</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>C-2500L</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>C-3020</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-3040</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-460 ZOOM del Sol</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-4000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-4040Z</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-50</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-55 / C-5500</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-60</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-70 / C-7000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-5000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-5050</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-5060</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-5500</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-700 ZU</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-7070</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-7000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>C-730 CZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-720</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-730</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-740</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-750</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-765</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-770</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>C-8080</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>D-40</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>D-100 Brio</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-150 Brio</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-370</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-380</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-390</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-395</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-425</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-435</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-510</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-520</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>D-535 / C-370</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-540</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-545</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-550</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-560</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-580</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-590</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-595</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>D-630</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>E-1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-3</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-5</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-10</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>E-100 RS</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>E-20</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>E-30</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-300</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-330</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-400</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-410</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-420</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-450</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-500</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-510</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-520</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-600</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-620</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-M5</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-P1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-P2</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-P3</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-PL1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-PL1s</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-PL2</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-PL3</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>E-PM1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Ferrari DIGITAL MODEL 2004</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-25</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-26</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-45</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-46</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-47</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-110</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-115</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-120</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-130</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-140</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-150</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-170</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-180</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-210</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-230</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-240</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-250</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>FE-270</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-280</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-290</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-300</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>FE-310</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-340</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-350</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-360</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-370</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-3000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-4000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-4030</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-4040</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-5000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-5010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-5020</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>FE-5500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>ImageLink</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>IR-300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>IR-500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-310</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>SP-320</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>SP-350</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>SP-500 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-510 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-550 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-560 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-565 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-570 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-590 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-600 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-610 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-620 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-800 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SP-810 UZ</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 410</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 550WP</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 600</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 720 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 725 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 730</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 740</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 750</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 760</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 770</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 780</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 790 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 800</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Stylus 810</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Stylus 820</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 830</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 840</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 850 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1000</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Stylus 1010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1020</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1030 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1040</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1050 SW</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 1200</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Stylus 5000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 5010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 5050</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 7000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 7030</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 7010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 7040</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 7050</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 9000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus 9010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 3000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 6000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 6010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 6020</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 8000</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough 8010</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Tough TG-1 iHS</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Verve</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Stylus Verve s</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SH-21</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SZ-10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SZ-11</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SZ-12</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SZ-30MR</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SZ-31MR</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>TG-310</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>TG-320</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>TG-610</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>TG-810</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>TG-820 His</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VG-110</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VG-120</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VG-145</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VG-160</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VR-320</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VR-330</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>VR-340</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>XZ-1</string><key>cocValue</key><real>0.006</real></dict>
 	</array>
 	<key>Panasonic</key>
 	<array>
-		<dict>
-			<key>modelName</key>
-			<string>Lumix DMC-FZ1</string>
-			<key>cocValue</key>
-			<real>0.004</real>
-		</dict>
+        <dict><key>modelName</key><string>Lumix DMC-3D1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-F7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH25</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FH27</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FP8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS11</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS12</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS15</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS16</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS25</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS33</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS42</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FS62</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX01</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX07</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX12</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX33</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX35</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX37</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX48</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX55</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX66</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX65</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX75</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX78</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX100</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX150</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX580</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FX700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ1</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ3</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ18</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ28</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ30</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ35</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ47</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ50</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-FZ150</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-G1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-G2</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-G3</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-G10</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GF1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GF2</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GF3</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GF5</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GH1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GH2</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-GX1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-L1</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-L10</string><key>cocValue</key><real>0.015</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC1</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC20</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC40</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC5</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LC80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS75</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LS85</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LX1</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LX2</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LX3</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LX5</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-LZ10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-S1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-S2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-S3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-SZ1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-SZ7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TS20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ1</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ2</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-TZ50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZR1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS15</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZS20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Lumix DMC-ZX3</string><key>cocValue</key><real>0.005</real></dict>
 	</array>
-	<key>Sony</key>
+   	<key>Pentax</key>
 	<array>
-		<dict>
-			<key>modelName</key>
-			<string>NEX-3</string>
-			<key>cocValue</key>
-			<real>0.02</real>
-		</dict>
+        <dict><key>modelName</key><string>EI-100</string><key>cocValue</key><real>0.004</real></dict>
+        <dict><key>modelName</key><string>Optio 30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 33WR</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 43WR</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 33LF</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 60</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 230</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 330</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 330GS</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio 430</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 430 RS</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 450</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 550</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 555</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio 750Z</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio A10</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio A20</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio A30</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio A40</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio E10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio E90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio H90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio I-10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio LS465</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio MX4</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio M90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio P70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio P80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio RS1500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio RZ10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio RZ18</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S4i</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S5i</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S5n</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S5z</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S6</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S10</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio S12</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Optio S30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S45</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S55</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio S60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio SV</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio SVi</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio T10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio T20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio T30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio V10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio VS20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio X</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio W10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio W20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio W30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio W80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio W90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WG-1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WG-1 GPS</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WG-2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WG-2 GPS</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WP</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WPi</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio WS80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Optio Z10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>645D</string><key>cocValue</key><real>0.05</real></dict>
+        <dict><key>modelName</key><string>*ist D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>*ist DL</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>*ist DL2</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>*ist DS</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>*ist DS2</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K-r</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K-x</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K-01</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K-5</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K7</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K10D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K20D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K-30</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K100D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K100D Super</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K110D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K200D</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>K2000</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Q</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>X70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>X90</string><key>cocValue</key><real>0.005</real></dict>
+    </array>
+    <key>Sony</key>
+	<array>
+        <dict><key>modelName</key><string>Alpha DSLR-A100</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A200</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A230</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A290</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A300</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A330</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A350</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A380</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A390</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A450</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A500</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A550</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A560</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A580</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A700</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A850</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>Alpha DSLR-A900</string><key>cocValue</key><real>0.03</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-F88</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-F707</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-F717</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-F828</string><key>cocValue</key><real>0.008</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-G1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-G3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H7V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H9V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H55</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-H90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX10V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX20V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX30V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX100V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-HX200V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-L1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-M1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-M2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-N1</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-N2</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P3</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P31</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P32</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P41</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P5</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P7</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P8</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P9</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P10</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P51</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P52</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P71</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P72</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P73</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P92</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P93</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P100</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P120</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P150</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-P200</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-R1</string><key>cocValue</key><real>0.018</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-RX100</string><key>cocValue</key><real>0.011</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S75</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S85</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S600</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S650</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S730</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S750</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S780</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-S800</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T2</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T3</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T7</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T11</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T33</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T77</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T110</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T300</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T500</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T700</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-T900</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX55</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX66</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX100V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-TX200V</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-U20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-U40</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-U60</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-V1</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-V3</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W1</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W5</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W7</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W20</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W35</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W55</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W80</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W90</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W100</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W120</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W130</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W150</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W170</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W200</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W230</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W290</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W300</string><key>cocValue</key><real>0.007</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W510</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W530</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W550</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W560</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W570</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W610</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W620</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W650</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-W690</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX5</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX9</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX10</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX30</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX50</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX70</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX150</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>NEX-3</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>NEX-5</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>NEX-5N</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>NEX-C3</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>NEX-F3</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>NEX-7</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>Cyber Shot DSC-WX1</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD250</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD300</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD350</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD400</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-CD500</string><key>cocValue</key><real>0.006</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-FD100</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>Mavica MVC-FD200</string><key>cocValue</key><real>0.005</real></dict>
+        <dict><key>modelName</key><string>SLT-A33</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A35</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A37</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A55</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A57</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A65</string><key>cocValue</key><real>0.02</real></dict>
+        <dict><key>modelName</key><string>SLT-A77</string><key>cocValue</key><real>0.02</real></dict>
 	</array>
 </dict>
 </plist>
