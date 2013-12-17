@@ -19,7 +19,8 @@
     
     if (brands == nil)
     {
-        brands = [NSArray arrayWithArray:[[Camera cameraRepository] allKeys]];
+        brands = [NSArray arrayWithArray:
+                  [[[Camera cameraRepository] allKeys] sortedArrayUsingSelector:@selector(compare:)]];
     }
     
     return brands;

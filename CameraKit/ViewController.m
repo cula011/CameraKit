@@ -59,7 +59,7 @@ Units selectedMetric;
     
     if (_selectedCameraModel != nil)
     {
-        camera.text = [NSString stringWithFormat:@"%@ (%@ mm)", _selectedCameraModel, _cocValue];
+        camera.text = [NSString stringWithFormat:@"%@", _selectedCameraModel];
     }
     
     [picker selectRow:[userDefaults integerForKey:@"selectedFocalLength"] inComponent:0 animated:NO];
