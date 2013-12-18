@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Luka Kruscic. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DOFCalculatorViewController.h"
 #import "Aperture.h"
 #import "DOFCalculator.h"
 
-@interface ViewController ()
+@interface DOFCalculatorViewController ()
 
 @property (strong, nonatomic) DOFCalculator *dofCalc;
 
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation ViewController
+@implementation DOFCalculatorViewController
 
 Units selectedMetric;
 

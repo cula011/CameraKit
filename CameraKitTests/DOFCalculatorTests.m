@@ -34,7 +34,8 @@
 
 - (void)testHyperfocalDistanceCalculatorInMeters
 {
-    double actual = [dofCalc hyperfocalDistanceForFocalLength:50 aperture:[NSNumber numberWithDouble:2] circleOfConfusion:[NSNumber numberWithDouble:0.030] in:Meteres];
+    double actual = [dofCalc hyperfocalDistanceForFocalLength:50 aperture:[NSNumber numberWithDouble:2]
+                                            circleOfConfusion:[NSNumber numberWithDouble:0.030] in:Meteres];
     NSString *roundedActual = [NSString stringWithFormat:@"%5.2f", actual];
     XCTAssertTrue([roundedActual isEqualToString:@"41.72"],
                   @"Hyperfocal distance should be 41.72 but was %@.", roundedActual);
@@ -42,7 +43,8 @@
 
 - (void)testHyperfocalDistanceCalculatorInFeet
 {
-    double actual = [dofCalc hyperfocalDistanceForFocalLength:50 aperture:[NSNumber numberWithDouble:2] circleOfConfusion:[NSNumber numberWithDouble:0.030] in:Feet];
+    double actual = [dofCalc hyperfocalDistanceForFocalLength:50 aperture:[NSNumber numberWithDouble:2]
+                                            circleOfConfusion:[NSNumber numberWithDouble:0.030] in:Feet];
     NSString *roundedActual = [NSString stringWithFormat:@"%4.1f", actual];
     XCTAssertTrue([roundedActual isEqualToString:@"136.9"],
                   @"Hyperfocal distance should be 136.9 but was %@.", roundedActual);

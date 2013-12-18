@@ -52,13 +52,7 @@
     {
         NSPropertyListFormat format;
         NSError *errorDesc = nil;
-        NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                                  NSUserDomainMask, YES) objectAtIndex:0];
-        NSString *plistPath = [rootPath stringByAppendingPathComponent:@"CameraRepository.plist"];
-        if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath])
-        {
-            plistPath = [[NSBundle mainBundle] pathForResource:@"CameraRepository" ofType:@"plist"];
-        }
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"CameraRepository" ofType:@"plist"];
         NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
         
         repository = (NSDictionary *)[NSPropertyListSerialization propertyListWithData:plistXML

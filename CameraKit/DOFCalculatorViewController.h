@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface DOFCalculatorViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *camera;
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
