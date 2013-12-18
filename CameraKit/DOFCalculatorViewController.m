@@ -40,8 +40,8 @@ Units selectedMetric;
     
     _dofCalc = [[DOFCalculator alloc] init];
     
-    // TODO: Initialise the set of available focal lengths
-    _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
+    _focalLength = [[NSArray alloc]initWithObjects:@"14", @"16", @"18", @"20", @"24", @"28", @"30", @"35", @"50", @"70",
+                    @"85", @"105", @"255", @"300", @"500", nil];
     
     _fNumber = [[NSMutableArray alloc]init];
     for (Aperture *aperture in [Aperture apertureLibrary])
@@ -49,8 +49,11 @@ Units selectedMetric;
         [_fNumber addObject:[aperture fNumber]];
     }
     
-    // TODO: Initialise the set of available distances array
-    _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
+    _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"3", @"3.5", @"4", @"4.5", @"5",
+                          @"5.5", @"6", @"6.5", @"7", @"7.5", @"8", @"8.5", @"9", @"9.5", @"10", @"11", @"12", @"13",
+                          @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"25", @"30", @"35", @"40", @"45", @"50",
+                          @"55", @"60", @"65", @"70", @"75", @"80", @"85", @"90", @"95", @"100", @"110", @"120", @"130",
+                          @"140", @"150", @"160", @"170",  @"180", @"190", @"200", nil];
     
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -163,7 +166,7 @@ Units selectedMetric;
     switch (component)
     {
         case 0:
-            return [NSString stringWithFormat:@"%@mm", [_focalLength objectAtIndex:row]];
+            return [NSString stringWithFormat:@"%@", [_focalLength objectAtIndex:row]];
         case 1:
             return [NSString stringWithFormat:@"f/%@", [_fNumber objectAtIndex:row]];
         case 2:
