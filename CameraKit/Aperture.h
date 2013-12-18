@@ -15,6 +15,4 @@
 
 +(NSOrderedSet*)apertureLibrary;
 
--(Aperture *)initWithFNumber:(NSNumber *)fn apertureValue:(int)av;
-
 @end

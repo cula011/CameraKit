@@ -32,12 +32,15 @@ Units selectedMetric;
 @synthesize camera, nearDistance, farDistance, totalDepthOfField, hyperfocalDistance;
 @synthesize metricsControl;
 
+#pragma mark - UIViewController lifecycle methods
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     _dofCalc = [[DOFCalculator alloc] init];
     
+    // TODO: Initialise the set of available focal lengths
     _focalLength = [[NSArray alloc]initWithObjects:@"50m", nil];
     
     _fNumber = [[NSMutableArray alloc]init];
@@ -46,6 +49,7 @@ Units selectedMetric;
         [_fNumber addObject:[aperture fNumber]];
     }
     
+    // TODO: Initialise the set of available distances array
     _distanceToSubject = [[NSArray alloc] initWithObjects:@"1", @"1.5", @"2", @"2.5", @"10", nil];
     
 
@@ -78,14 +82,16 @@ Units selectedMetric;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+#pragma mark UI interaction methods
+
+- (IBAction)metricsChanged:(id)sender
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setInteger:[picker selectedRowInComponent:0] forKey:@"selectedFocalLength"];
-    [userDefaults setInteger:[picker selectedRowInComponent:1] forKey:@"selectedFNumber"];
-    [userDefaults setInteger:[picker selectedRowInComponent:2] forKey:@"selectedDistance"];
+    selectedMetric = [sender selectedSegmentIndex];
 
     [self calculate];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:selectedMetric forKey:@"selectedMetric"];
 }
 
 - (void)calculate
@@ -100,11 +106,20 @@ Units selectedMetric;
     int selectedApertureValue = [selectedFNumber apertureValue];
     NSString *selectedDistance = [_distanceToSubject objectAtIndex:[picker selectedRowInComponent:2]];
     
-    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectedFocalLength doubleValue] aperture:[NSNumber numberWithInt:selectedApertureValue] circleOfConfusion:_cocValue in:selectedMetric];
-    double nd = [_dofCalc nearDistanceFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue] in:selectedMetric];
-    double fd = [_dofCalc farDistanceForFocalLength:[selectedFocalLength doubleValue] hyperfocalDistance:hfd focusDistance:[selectedDistance doubleValue] in:selectedMetric];
+    double hfd = [_dofCalc hyperfocalDistanceForFocalLength:[selectedFocalLength doubleValue]
+                                                   aperture:[NSNumber numberWithInt:selectedApertureValue]
+                                          circleOfConfusion:_cocValue
+                                                         in:selectedMetric];
+    double nd = [_dofCalc nearDistanceFocalLength:[selectedFocalLength doubleValue]
+                               hyperfocalDistance:hfd
+                                    focusDistance:[selectedDistance doubleValue]
+                                               in:selectedMetric];
+    double fd = [_dofCalc farDistanceForFocalLength:[selectedFocalLength doubleValue]
+                                 hyperfocalDistance:hfd
+                                      focusDistance:[selectedDistance doubleValue]
+                                                 in:selectedMetric];
     double tdof = [_dofCalc totalDepthOfFieldForFarDistance:fd nearDistance:nd];
-
+    
     nearDistance.text = [NSString stringWithFormat:@"%5.2f", nd];
     if (fd < 0)
     {
@@ -119,17 +134,7 @@ Units selectedMetric;
     hyperfocalDistance.text = [NSString stringWithFormat:@"%5.2f", hfd];
 }
 
-- (IBAction)metricsChanged:(id)sender
-{
-    selectedMetric = [sender selectedSegmentIndex];
-
-    [self calculate];
-    
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setInteger:selectedMetric forKey:@"selectedMetric"];
-}
-
-#pragma mark Picker Data Source Methods
+#pragma mark UIPickerViewDataSource methods
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -151,14 +156,14 @@ Units selectedMetric;
     }
 }
 
-#pragma mark Picker Delegate Methods
+#pragma mark UIPickerViewDelegate methods
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     switch (component)
     {
         case 0:
-            return [NSString stringWithFormat:@"%@ mm", [_focalLength objectAtIndex:row]];
+            return [NSString stringWithFormat:@"%@mm", [_focalLength objectAtIndex:row]];
         case 1:
             return [NSString stringWithFormat:@"f/%@", [_fNumber objectAtIndex:row]];
         case 2:
@@ -166,6 +171,16 @@ Units selectedMetric;
         default:
             return 0;
     }
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:[picker selectedRowInComponent:0] forKey:@"selectedFocalLength"];
+    [userDefaults setInteger:[picker selectedRowInComponent:1] forKey:@"selectedFNumber"];
+    [userDefaults setInteger:[picker selectedRowInComponent:2] forKey:@"selectedDistance"];
+    
+    [self calculate];
 }
 
 @end
