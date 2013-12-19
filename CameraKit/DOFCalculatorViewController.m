@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  DOFCalculatorViewController.m
 //  CameraKit
 //
 //  Created by Luka Kruscic on 29/11/2013.

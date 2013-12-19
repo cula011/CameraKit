@@ -23,12 +23,13 @@
 		FD7A2B5A18488E68007ADDA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3918488E68007ADDA5 /* Foundation.framework */; };
 		FD7A2B5B18488E68007ADDA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A2B3D18488E68007ADDA5 /* UIKit.framework */; };
 		FD7A2B6318488E68007ADDA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD7A2B6118488E68007ADDA5 /* InfoPlist.strings */; };
-		FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */; };
 		FD839CF3184EC56E00E1B897 /* CameraBrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */; };
 		FD839CF6184EDD6C00E1B897 /* CameraModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD839CF5184EDD6C00E1B897 /* CameraModelTableViewController.m */; };
 		FDC0945A18567CFA00DF219E /* DOFCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */; };
 		FDC0945D1856DA4200DF219E /* dof_explained.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDC0945C1856DA4200DF219E /* dof_explained.gif */; };
 		FDC0945F1857E64200DF219E /* CameraRepository.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDC0945E1857E64200DF219E /* CameraRepository.plist */; };
+		FDFCC0AC1862585A007E17C6 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCC0AB1862585A007E17C6 /* CameraTests.m */; };
+		FDFCC0AE186262E2007E17C6 /* ApertureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFCC0AD186262E2007E17C6 /* ApertureTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		FD7A2B5818488E68007ADDA5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FD7A2B6018488E68007ADDA5 /* CameraKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraKitTests-Info.plist"; sourceTree = "<group>"; };
 		FD7A2B6218488E68007ADDA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraKitTests.m; sourceTree = "<group>"; };
 		FD839CF1184EC56D00E1B897 /* CameraBrandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBrandTableViewController.h; sourceTree = "<group>"; };
 		FD839CF2184EC56D00E1B897 /* CameraBrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBrandTableViewController.m; sourceTree = "<group>"; };
 		FD839CF4184EDD6C00E1B897 /* CameraModelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraModelTableViewController.h; path = ../CameraModelTableViewController.h; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOFCalculatorTests.m; sourceTree = "<group>"; };
 		FDC0945C1856DA4200DF219E /* dof_explained.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dof_explained.gif; sourceTree = "<group>"; };
 		FDC0945E1857E64200DF219E /* CameraRepository.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CameraRepository.plist; sourceTree = "<group>"; };
+		FDFCC0AB1862585A007E17C6 /* CameraTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTests.m; sourceTree = "<group>"; };
+		FDFCC0AD186262E2007E17C6 /* ApertureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApertureTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				FDC0945918567CFA00DF219E /* DOFCalculatorTests.m */,
-				FD7A2B6418488E68007ADDA5 /* CameraKitTests.m */,
+				FDFCC0AB1862585A007E17C6 /* CameraTests.m */,
+				FDFCC0AD186262E2007E17C6 /* ApertureTests.m */,
 				FD7A2B5F18488E68007ADDA5 /* Supporting Files */,
 			);
 			path = CameraKitTests;
@@ -311,7 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7A2B6518488E68007ADDA5 /* CameraKitTests.m in Sources */,
+				FDFCC0AC1862585A007E17C6 /* CameraTests.m in Sources */,
+				FDFCC0AE186262E2007E17C6 /* ApertureTests.m in Sources */,
 				FDC0945A18567CFA00DF219E /* DOFCalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
